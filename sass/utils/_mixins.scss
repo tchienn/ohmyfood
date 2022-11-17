@@ -1,0 +1,12 @@
+// This file stores application-wide SASS mixins
+
+// GENERAL MIXINS
+@mixin flexRow($wrap: row wrap) {
+    display: flex;
+    flex-flow: $wrap;
+}
+
+@mixin flexColumn($wrap: column wrap) {
+    display: flex;
+    flex-flow: $wrap;
+}
