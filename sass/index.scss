@@ -1,0 +1,16 @@
+// FONTS
+
+// UTILS
+@import "./utils/variables", "./utils/mixins";
+
+// BASE
+@import "./base/base";
+
+// COMPONENTS
+@import "./components/animations";
+
+// LAYOUTS
+@import "./layouts/header", "./layouts/footer";
+
+// PAGES
+@import "./pages/home", "./pages/menu";
