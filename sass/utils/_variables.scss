@@ -1,5 +1,8 @@
 // This file stores application-wide SASS variables
 
+// FONTS 
+$logoFont: 'Shrikhand', cursive;
+
 // APPLICATION-WIDE COLORS
 $colorPrimary: #9356dc;
 $colorSecondary: #FF79da;
@@ -18,5 +21,5 @@ $labelTextColor: #31947b;
 // PROPERTIES
 $transitionHover: all 450ms ease-in-out;
 
-// FONTS 
-$logoFont: 'Shrikhand', cursive;
+// FOOTER COLORS
+$backgroundFooterColor: #323232;
