@@ -1,18 +1,18 @@
 // This file stores application-wide footer styles
 
 .footer {
-    position: relative;
+    @include flexColumn;
+    gap: 1em;
     width: 100%;
-    height: 180px;
-    padding: 30px;
+    padding: 2em;
     background-color: $backgroundFooterColor;
 
     &__title {
-        font-size: 16px;
-        letter-spacing: 0.5px;
+        margin-bottom: 1em;
+        font-size: 1.6em;
+        letter-spacing: 0.05em;
         font-family: $logoFont;
         color: #fff;
-        margin-bottom: 10px;
     }
 
     &__list {
@@ -24,8 +24,8 @@
         }
 
         &-item {
-            font-size: 14px;
-            margin-bottom: 5px;
+            font-size: 1.5em;
+            margin-bottom: 0.5em;
             
             a {
                 text-decoration: none;
@@ -35,44 +35,31 @@
     }
 }
 
-// TABLET
+// TABLET AND DESKTOP FOOTER STYLING
 @media screen and (min-width: 768px) {
     .footer {
         @include flexRow;
     
         &__title {
-            font-size: 32px;
-            letter-spacing: 0.5px;
-            margin-bottom: -20px;
+            font-size: 3em;
+            margin-bottom: 0;
         }
     
         &__list {
             width: 100%;
 
             &-item {
-                margin-right: 10px;
-                line-height: 30px;
+                margin-right: 0.5em;
                 display: inline;
-                font-size: 16px;
             }    
         }
     }
 
-    #propose-item {
+    #suggest-item {
         color: $colorSecondary;
     }
 
     #partner-item {
         color: $colorTertiary;        
-    }
-}
-
-// DESKTOP
-@media screen and (min-width: 992px) {
-    .footer {
-    
-        &__list {
-            width: 100%; 
-        }
     }
 }
