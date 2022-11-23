@@ -1,9 +1,16 @@
 // This file stores application-wide header styles
 
-//HOME PAGE
-
+// HOME PAGE
+// HEADER SECTION
 .header {
     @include flexRow;
     justify-content: center;
-    margin: 30px;
+    margin: 20px 0 18px 0;
+
+    &__logo {
+        width: 16em;
+        height: 3em;
+    }
+
 }
+
