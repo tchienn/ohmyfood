@@ -1,7 +1,9 @@
 // FONTS
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 
 // UTILS
-@import "./utils/variables", "./utils/mixins";
+@import "./utils/mixins", "./utils/variables";
 
 // BASE
 @import "./base/base";
@@ -10,7 +12,7 @@
 @import "./components/animations";
 
 // LAYOUTS
-@import "./layouts/header", "./layouts/footer";
+@import "./layouts/footer", "./layouts/header";
 
 // PAGES
 @import "./pages/home", "./pages/menu";

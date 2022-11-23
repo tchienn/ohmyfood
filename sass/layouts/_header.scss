@@ -1,7 +1,9 @@
 // This file stores application-wide header styles
 
 //HOME PAGE
+
 .header {
-    margin: 30px;
     @include flexRow;
+    justify-content: center;
+    margin: 30px;
 }
