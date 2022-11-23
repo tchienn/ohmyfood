@@ -17,11 +17,20 @@
     }
 
     &__icon {
-        font-size: 26px;
+        font-size: 1.5em;
     }
 
     &__title {
         color: #000000;
+    }
+}
+
+//TABLET AND DESKTOP STYLING
+@media screen and (min-width: 992px) {
+    .location {
+        background-color: transparent;
+        border-radius: 2em;
+        box-shadow: none;
     }
 }
 // END LOCATION SECTION STYLING
