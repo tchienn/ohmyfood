@@ -1,1 +1,27 @@
 // This file stores home page styles
+
+// LOCATION SECTION
+.location {
+    @include flexRow;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+    width: 100%;
+    height: 4.6em;
+    background-color: #eaeaea;
+    box-shadow: 0 5px 5px 0 $colorBoxShadow inset;
+
+    &__title {
+        font-weight: 400;
+        font-size: 1.5em;
+    }
+
+    &__icon {
+        font-size: 26px;
+    }
+
+    &__title {
+        color: #000000;
+    }
+}
+// END LOCATION SECTION STYLING
