@@ -165,3 +165,60 @@ i.fa-solid.fa-list::before {
     }
 }
 // END INSTRUCTIONS SECTION
+
+// RESTAURANTS SECTION
+.restaurants {
+    @include flexColumn;
+    width: 100%;
+    background-color: $colorBackgroundLight;
+
+    &__heading {
+        @include homeHeading;
+        margin-top: 30px;
+    }
+
+    &__card {
+
+        &-img-container {
+            position: relative;
+
+            &-img {
+                @include imgCover;
+            }
+    
+            &-label {
+                @include restaurantLabel;
+            }
+        }
+    }
+
+    &__card {
+        @include restaurantCard;
+
+        a {
+            @include restaurantCardLink;
+        }
+
+        &-img {
+            @include imgCover;
+        }
+
+        &-caption-container {
+            @include restaurantInfoContainer;
+        }
+
+        &-heading {
+            @include restaurantCardHeading;
+        }
+
+        &-info {
+            @include restaurantCardInfo;
+        }
+
+        &-heart {
+            @include likeButton;
+
+        }
+    }
+}
+// END RESTAURANTS SECTION
