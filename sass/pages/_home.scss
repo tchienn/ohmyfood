@@ -21,11 +21,11 @@
     }
 
     &__title {
-        color: #000000;
+        color: #000;
     }
 }
 
-//TABLET AND DESKTOP STYLING
+//LOCATION SECTION TABLET AND DESKTOP STYLING
 @media screen and (min-width: 992px) {
     .location {
         background-color: transparent;
@@ -34,3 +34,100 @@
     }
 }
 // END LOCATION SECTION STYLING
+
+// EXPLORE SECTION
+.explore {
+    padding: 3.5em 3.5em 5.5em 3.5em;
+    @include flexColumn;
+    gap: 3.3em;
+    align-items: center;
+    background-color: $colorBackgroundLight;
+
+    &__heading {
+        font-size: 2.3em;
+        color: #000;
+    }
+
+    &__description {
+        font-weight: 300;
+        font-size: 1.7em;
+        text-align: center;
+    }
+
+    &__btn {
+        @include button;
+    }
+}
+// END EXPLORE SECTION
+
+// INSTRUCTIONS SECTION
+.instructions {
+    margin: 4.5em 3em 3em 3em;
+    @include flexRow;
+    justify-content: space-between;
+    gap: 2em;
+
+    &__heading {
+        margin-bottom: 0.2em;
+        font-size: 2.3em;
+    }
+
+    &__card {
+        @include flexRow;
+        justify-content: flex-start;
+        border: 1px solid transparent;
+        background-color: #f7f7f7;
+        border-radius: 2em;
+        padding: 2.1em 2.5em 2.1em 0.5em;
+        width: 100%;
+        box-shadow: 0 5px 20px 0 $colorBoxShadow;
+    }
+
+    &__chip {
+        position: relative;
+        right: 1.3em;
+        top: 2px;
+        width: 2em;
+        height: 2em;
+        padding: 8px;
+        border-radius: 100px;
+        border: 2px solid transparent;
+        background-color: $colorPrimary;
+        font-size: 1.5em;
+        color: #fff;
+        overflow: hidden;
+    }
+
+    &__bar {
+        @include flexRow;
+        justify-content: space-between;
+        gap: 1.2em;
+        padding: 0.5em;
+        font-weight: 500;
+        font-size: 1.7em;
+    }
+
+    &__txt {
+        color: black;
+    }
+}
+
+#instructions__card--highlighted {
+    background-color: $hoverInstructionCardColor;
+}
+
+i.fa-solid.fa-mobile-screen-button::before,
+i.fa-solid.fa-list::before {
+    color: $colorBoxShadowEm;
+    font-size: 1.3em;
+}
+
+#instructions__chip--highlighted {
+    color: $colorPrimary;
+    font-size: 1.3em;
+}
+
+//INSTRUCTIONS SECTION TABLET AND DESKTOP STYLING
+@media screen and (min-width: 992px) {
+}
+// END INSTRUCTIONS SECTION

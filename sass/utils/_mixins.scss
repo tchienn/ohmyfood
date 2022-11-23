@@ -1,6 +1,6 @@
 // This file stores application-wide SASS mixins
 
-// GENERAL MIXINS
+// GLOBAL MIXINS
 @mixin flexRow($wrap: row wrap) {
     display: flex;
     flex-flow: $wrap;
@@ -9,4 +9,23 @@
 @mixin flexColumn($wrap: column wrap) {
     display: flex;
     flex-flow: $wrap;
+}
+
+@mixin button {
+    padding: 1em 2em;
+    border: none;
+    border-radius: 7em;
+    background-image: linear-gradient($colorSecondary, $colorPrimary);
+    font-size: 1.5em;
+    font-weight: 400;
+    color: #fff;
+    box-shadow: 0 6px 12px 0 $colorBoxShadow;
+    cursor: pointer;
+
+    &:hover {
+        transition: $transitionHover;
+        filter:brightness(106%);
+        background-image: linear-gradient($colorSecondary, $colorPrimary);
+        box-shadow: 0 8px 10px 0 $colorBoxShadowEm;
+    }
 }

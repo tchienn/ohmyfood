@@ -1,9 +1,19 @@
 // This file stores application-wide SASS variables
 
-// COLORS 
 // APPLICATION-WIDE COLORS
 $colorPrimary: #9356dc;
 $colorSecondary: #FF79da;
 $colorTertiary: #99e2d0;
 
+$colorBackgroundLight: #f5f5f5;
 $colorBoxShadow: #bfbdbd;
+$colorBoxShadowEm: #8b8b8b;
+
+//INSTRUCTIONS CARD COLORS
+$hoverInstructionCardColor: #e7d2fe;
+
+// PROPERTIES
+$transitionHover: all 450ms ease-in-out;
+
+// FONTS 
+$logoFont: 'Shrikhand', cursive;
