@@ -1,6 +1,6 @@
 // This file stores application-wide header styles
 
-// HEADER SECTION STYLING
+// HOME HEADER SECTION STYLING
 // MOBILE STYLING
 .header {
     @include flexRow;
@@ -13,4 +13,27 @@
     }
 
 }
-// END HEADER SECTION STYLING
+// END HOME HEADER SECTION STYLING
+
+// MENU HEADER STYLING
+.header-menu { 
+    margin: 30px;
+    @include flexRow;
+    justify-content: flex-start;
+    align-items: center;
+
+    a {
+        text-decoration: none;
+        color: #000;
+    }
+
+    &__icon {
+        font-size: 3em;
+    }
+
+    &__logo {
+        background-color: aquamarine;
+        text-align: center;
+    }
+}
+// END MENU HEADER STYLING
