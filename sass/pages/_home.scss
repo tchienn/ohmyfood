@@ -241,7 +241,10 @@ i.fa-solid.fa-list::before {
             position: relative;
 
             &-img {
-                @include imgCover;
+                border-radius: 1.2em 1.2em 0 0;
+                object-fit: cover;
+                width: 100%;
+                height: 16.5em;
             }
     
             &-label {
@@ -258,7 +261,10 @@ i.fa-solid.fa-list::before {
         }
 
         &-img {
-            @include imgCover;
+            border-radius: 1.2em 1.2em 0 0;
+            object-fit: cover;
+            width: 100%;
+            height: 16.5em;
         }
 
         &-img-container-label {
@@ -329,7 +335,8 @@ i.fa-solid.fa-list::before {
                 position: relative;
     
                 &-img {
-                    @include imgCover;
+                    border-radius: 1.2em 1.2em 0 0;
+                    object-fit: cover;
                 }
         
                 &-label {
@@ -346,7 +353,8 @@ i.fa-solid.fa-list::before {
             }
     
             &-img {
-                @include imgCover;
+                border-radius: 1.2em 1.2em 0 0;
+                object-fit: cover;
             }
     
             &-img-container-label {
