@@ -17,9 +17,9 @@
 
 // MENU HEADER STYLING
 .header-menu { 
-    margin: 30px;
+    margin: 1.7em 12em 1.2em 2em;
     @include flexRow;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
 
     a {
@@ -28,12 +28,23 @@
     }
 
     &__icon {
-        font-size: 3em;
+        font-size: 2.5em;
     }
 
     &__logo {
-        background-color: aquamarine;
         text-align: center;
+        width: 18em;
+        height: 3em;
+    }
+}
+
+// TABLET AND DESKTOP MENU HEADER STYLING
+@media screen and (min-width: 768px) {
+    .header-menu { 
+        margin: 2em;
+        @include flexRow;
+        justify-content: space-between;
+        align-items: center;
     }
 }
 // END MENU HEADER STYLING
