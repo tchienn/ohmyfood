@@ -338,13 +338,6 @@ i.fa-solid.fa-list::before {
   color: transparent;
   font-size: 2.2em;
 }
-.restaurants__card-heart::after {
-  position: absolute;
-  content: "\f004";
-  right: 0px;
-  background-image: linear-gradient(#FF79da, #9356dc);
-  opacity: 0;
-}
 .restaurants__card-heart:hover::after {
   opacity: 1;
 }
@@ -425,13 +418,6 @@ i.fa-solid.fa-list::before {
     position: relative;
     color: transparent;
     font-size: 2.2em;
-  }
-  .restaurants__card-heart::after {
-    position: absolute;
-    content: "\f004";
-    right: 0px;
-    background-image: linear-gradient(#FF79da, #9356dc);
-    opacity: 0;
   }
   .restaurants__card-heart:hover::after {
     opacity: 1;

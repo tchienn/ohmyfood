@@ -34,13 +34,13 @@
     color: transparent;
     font-size: 2.2em;
 
+    //FIX
     &::after {
-        position: absolute;
-        content: "\f004";
-        right: 0px;
-        background-image: linear-gradient($colorSecondary, $colorPrimary);
-        // OPACITY FOCUS
-        opacity: 0;
+        // position: absolute;
+        // content: "\f004";
+        // right: 0px;
+        // background-image: linear-gradient($colorSecondary, $colorPrimary);
+        // opacity: 0;
     }
 
     &:hover::after {
