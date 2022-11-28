@@ -13,58 +13,6 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-@keyframes loaderBackground {
-  100% {
-    opacity: 0;
-  }
-}
-@keyframes loader {
-  0% {
-    transform: rotate(0deg);
-  }
-  25% {
-    transform: rotate(180deg);
-  }
-  50% {
-    transform: rotate(180deg);
-  }
-  75% {
-    transform: rotate(360deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-@keyframes loaderInner {
-  0% {
-    height: 0%;
-  }
-  25% {
-    height: 0%;
-  }
-  50% {
-    height: 100%;
-  }
-  75% {
-    height: 100%;
-  }
-  100% {
-    height: 0%;
-  }
-}
-@keyframes appear {
-  0% {
-    transform: translateY(1rem);
-    opacity: 0.25;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
 .footer {
   display: flex;
   flex-flow: column wrap;
@@ -157,44 +105,8 @@ body {
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
-    background-color: magenta;
   }
 }
-.loader {
-  position: fixed;
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  align-items: center;
-  z-index: 2;
-  opacity: 1;
-  background-color: #fff;
-  width: 100%;
-  height: 100%;
-  animation: loaderBackground 3s ease-in-out 1s forwards;
-}
-.loader__border {
-  width: 100px;
-  height: 100px;
-  border: 4px solid #9356dc;
-  overflow: hidden;
-  animation: loader 2500ms infinite ease-in-out;
-}
-.loader__border-icon {
-  position: absolute;
-  bottom: 25px;
-  left: 25px;
-  font-size: 45px;
-  color: #fff;
-}
-.loader-inner {
-  vertical-align: top;
-  display: inline-block;
-  width: 100%;
-  background-color: #9356dc;
-  animation: loaderInner 2500ms infinite ease-in-out;
-}
-
 .location {
   display: flex;
   flex-flow: row wrap;
@@ -252,13 +164,6 @@ body {
   box-shadow: 0 6px 12px 0 #bfbdbd;
   cursor: pointer;
 }
-.explore__btn:hover {
-  transition: all 450ms ease-in-out;
-  filter: brightness(106%);
-  background-image: linear-gradient(#FF79da, #9356dc);
-  box-shadow: 0 8px 10px 0 #8b8b8b;
-}
-
 .instructions {
   margin: 4.5em 3em 7em 3em;
   display: flex;
@@ -376,10 +281,6 @@ i.fa-solid.fa-list::before {
   box-shadow: 0 5px 15px 0 #bfbdbd;
   width: 100%;
 }
-.restaurants__card:hover {
-  transition: all 450ms ease-in-out;
-  transform: scale(1.02);
-}
 .restaurants__card a {
   text-decoration: none;
   color: #000;
@@ -434,20 +335,13 @@ i.fa-solid.fa-list::before {
 }
 .restaurants__card-heart {
   position: relative;
-  margin: 0 20px 0 0px;
   color: transparent;
   font-size: 2.2em;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #000;
 }
 .restaurants__card-heart::after {
   position: absolute;
   content: "\f004";
-  transition: all 450ms ease-in-out;
   right: 0px;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-stroke-color: transparent;
   background-image: linear-gradient(#FF79da, #9356dc);
   opacity: 0;
 }
@@ -478,10 +372,6 @@ i.fa-solid.fa-list::before {
     background-color: #fff;
     box-shadow: 0 5px 15px 0 #bfbdbd;
     width: 45%;
-  }
-  .restaurants__card:hover {
-    transition: all 450ms ease-in-out;
-    transform: scale(1.02);
   }
   .restaurants__card a {
     text-decoration: none;
@@ -533,20 +423,13 @@ i.fa-solid.fa-list::before {
   }
   .restaurants__card-heart {
     position: relative;
-    margin: 0 20px 0 0px;
     color: transparent;
     font-size: 2.2em;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #000;
   }
   .restaurants__card-heart::after {
     position: absolute;
     content: "\f004";
-    transition: all 450ms ease-in-out;
     right: 0px;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-stroke-color: transparent;
     background-image: linear-gradient(#FF79da, #9356dc);
     opacity: 0;
   }

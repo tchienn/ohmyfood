@@ -23,10 +23,9 @@
     cursor: pointer;
 
     &:hover {
-        transition: $transitionHover;
-        filter:brightness(106%);
-        background-image: linear-gradient($colorSecondary, $colorPrimary);
-        box-shadow: 0 8px 10px 0 $colorBoxShadowEm;
+        // filter:brightness(106%);
+        // background-image: linear-gradient($colorSecondary, $colorPrimary);
+        // box-shadow: 0 8px 10px 0 $colorBoxShadowEm;
     }
 }
 // Webkit safari
@@ -42,7 +41,6 @@
         background-image: linear-gradient($colorSecondary, $colorPrimary);
         // OPACITY FOCUS
         opacity: 0;
-        transition: $transitionHover;
     }
 
     &:hover::after {

@@ -188,10 +188,8 @@ i.fa-solid.fa-list::before {
         box-shadow: 0 5px 15px 0 $colorBoxShadow;
         width: 100%;
 
-        &:hover {
-            transition: $transitionHover;
-            transform: scale(1.02);
-        }
+        // &:hover {
+        // }
 
         a {
             text-decoration: none;
@@ -282,10 +280,8 @@ i.fa-solid.fa-list::before {
             box-shadow: 0 5px 15px 0 $colorBoxShadow;
             width: 45%;
     
-            &:hover {
-                transition: $transitionHover;
-                transform: scale(1.02);
-            }
+            // &:hover {
+            // }
     
             a {
                 text-decoration: none;
