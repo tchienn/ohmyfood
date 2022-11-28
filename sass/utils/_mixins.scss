@@ -29,25 +29,20 @@
         box-shadow: 0 8px 10px 0 $colorBoxShadowEm;
     }
 }
-
-@mixin likeButton($margin: 0 20px 0 0px) {
+// Webkit safari
+@mixin likeButton() {
     position: relative;
-    margin: $margin;
     color: transparent;
     font-size: 2.2em;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #000;
 
     &::after {
         position: absolute;
         content: "\f004";
-        transition: $transitionHover;
         right: 0px;
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-stroke-color: transparent;
         background-image: linear-gradient($colorSecondary, $colorPrimary);
+        // OPACITY FOCUS
         opacity: 0;
+        transition: $transitionHover;
     }
 
     &:hover::after {
