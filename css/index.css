@@ -72,10 +72,12 @@ body {
   flex-flow: row wrap;
   justify-content: center;
   margin: 20px 0 20px 0;
+  background-color: #fff;
+  height: 3em;
 }
 .header__logo {
   width: 16em;
-  height: 3em;
+  height: fit-content;
 }
 
 .header-menu {
