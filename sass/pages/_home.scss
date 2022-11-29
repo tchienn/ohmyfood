@@ -199,9 +199,6 @@ i.fa-solid.fa-list::before {
         box-shadow: 0 5px 15px 0 $colorBoxShadow;
         width: 100%;
 
-        // &:hover {
-        // }
-
         a {
             text-decoration: none;
             color: #000;
@@ -262,11 +259,12 @@ i.fa-solid.fa-list::before {
             line-height: 1.7em;
         }
 
-        &-heart {
-            @include likeButton;
-        }
+        // &-heart {
+        //     @include likeButton;
+        // }
     }
 }
+
 //LOCATION SECTION TABLET AND DESKTOP STYLING
 @media screen and (min-width: 992px) {
     .restaurants {
@@ -290,9 +288,6 @@ i.fa-solid.fa-list::before {
             background-color: #fff;
             box-shadow: 0 5px 15px 0 $colorBoxShadow;
             width: 45%;
-    
-            // &:hover {
-            // }
     
             a {
                 text-decoration: none;
@@ -350,9 +345,9 @@ i.fa-solid.fa-list::before {
                 line-height: 1.7em;
             }
     
-            &-heart {
-                @include likeButton;
-            }
+            // &-heart {
+            //     @include likeButton;
+            // }
         }
     }
 }

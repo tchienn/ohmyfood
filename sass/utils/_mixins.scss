@@ -23,27 +23,27 @@
     cursor: pointer;
 
     &:hover {
-        // filter:brightness(106%);
-        // background-image: linear-gradient($colorSecondary, $colorPrimary);
-        // box-shadow: 0 8px 10px 0 $colorBoxShadowEm;
+        filter:brightness(106%);
+        background-image: linear-gradient($colorSecondary, $colorPrimary);
+        box-shadow: 0 8px 10px 0 $colorBoxShadowEm;
     }
 }
 // Webkit safari
-@mixin likeButton() {
-    position: relative;
-    color: transparent;
-    font-size: 2.2em;
+// @mixin likeButton() {
+//     position: relative;
+//     color: transparent;
+//     font-size: 2.2em;
 
-    //FIX
-    &::after {
-        // position: absolute;
-        // content: "\f004";
-        // right: 0px;
-        // background-image: linear-gradient($colorSecondary, $colorPrimary);
-        // opacity: 0;
-    }
+//     //FIX
+//     &::after {
+//         // position: absolute;
+//         // content: "\f004";
+//         // right: 0px;
+//         // background-image: linear-gradient($colorSecondary, $colorPrimary);
+//         // opacity: 0;
+//     }
 
-    &:hover::after {
-        opacity: 1;
-    }
-}
+//     &:hover::after {
+//         opacity: 1;
+//     }
+// }
