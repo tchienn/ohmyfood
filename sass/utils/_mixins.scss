@@ -1,6 +1,7 @@
 // This file stores application-wide SASS mixins
 
 // GLOBAL MIXINS
+// Flex shortcuts
 @mixin flexRow($wrap: row wrap) {
     display: flex;
     flex-flow: $wrap;
@@ -11,6 +12,7 @@
     flex-flow: $wrap;
 }
 
+// Main button template
 @mixin button {
     padding: 1em 2em;
     border: none;
@@ -28,22 +30,5 @@
         box-shadow: 0 8px 10px 0 $colorBoxShadowEm;
     }
 }
-// Webkit safari
-// @mixin likeButton() {
-//     position: relative;
-//     color: transparent;
-//     font-size: 2.2em;
 
-//     //FIX
-//     &::after {
-//         // position: absolute;
-//         // content: "\f004";
-//         // right: 0px;
-//         // background-image: linear-gradient($colorSecondary, $colorPrimary);
-//         // opacity: 0;
-//     }
-
-//     &:hover::after {
-//         opacity: 1;
-//     }
-// }
+// Like button
