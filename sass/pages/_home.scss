@@ -129,46 +129,52 @@ i.fa-solid.fa-list::before {
 }
 
 //INSTRUCTIONS SECTION TABLET AND DESKTOP STYLING
-// @media screen and (min-width: 992px) {
-//     .instructions {
-//         gap: 0;
-//         align-items: center;
-//         justify-content: space-evenly;
-//         padding-bottom: 3.5em;
+@media screen and (min-width: 992px) {
+    .instructions {
+        gap: 0;
+        align-items: center;
+        justify-content: space-evenly;
+        padding-bottom: 3.5em;
 
-//         &__heading {
-//             margin-bottom: 0;
-//             font-size: 2em;
-//             color: $colorPrimary;
-//         }
+        &__heading {
+            margin-bottom: 0;
+            font-size: 2em;
+            color: $colorPrimary;
+        }
     
-//         &__card {
-//             justify-content: center;
-//             align-items: center;
-//             border-radius: 100px;
-//             padding: 1.5em;
-//             height: 15em;
-//             width: 20%;
-//         }
+        &__card {
+            justify-content: center;
+            align-items: center;
+            border: none;
+            padding: 1.5em;
+            height: 15em;
+            width: 18%;
+            background-color: transparent;
+            box-shadow: none;
+        }
+
+        #instructions__card--highlighted {
+            background-color: transparent;
+        }
     
-//         &__chip {
-//             left: 0;
-//             padding: 0;
-//             background-color: transparent;
-//             font-weight: 900;
-//             border-radius: 0;
-//             color: $colorPrimary;
-//         }
+        &__chip {
+            left: 0;
+            padding: 0;
+            background-color: transparent;
+            font-weight: 900;
+            border-radius: 0;
+            color: $colorPrimary;
+        }
     
-//         &__bar {
-//             justify-content: center;
-//             gap: 1em;
-//             padding: 0;
-//             font-size: 1.2em;
-//             width: 80%;
-//         }
-//     }
-// }
+        &__bar {
+            justify-content: center;
+            gap: 1em;
+            padding: 0;
+            font-size: 1.2em;
+            width: 80%;
+        }
+    }
+}
 // END INSTRUCTIONS SECTION
 
 // RESTAURANTS SECTION
