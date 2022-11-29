@@ -71,9 +71,8 @@ body {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  margin: 20px 0 20px 0;
+  padding: 1.9em 0 1.9em 0;
   background-color: #fff;
-  height: 3em;
 }
 .header__logo {
   width: 16em;
@@ -81,32 +80,36 @@ body {
 }
 
 .header-menu {
-  margin: 1.7em 12em 1.2em 2em;
+  padding: 1.8em 12em 1.3em 2em;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
+  background-color: #fff;
 }
 .header-menu a {
   text-decoration: none;
   color: #000;
 }
 .header-menu__icon {
-  font-size: 2.5em;
+  font-size: 2.1em;
 }
 .header-menu__logo {
   text-align: center;
-  width: 18em;
+  padding-left: 2em;
+  width: 20em;
   height: 3em;
 }
 
 @media screen and (min-width: 768px) {
   .header-menu {
-    margin: 2em;
-    display: flex;
-    flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
+    padding-right: 2.5em;
+  }
+  .header-menu__logo {
+    padding: 0;
+    width: 18em;
   }
 }
 .location {
@@ -116,7 +119,7 @@ body {
   align-items: center;
   gap: 1.5em;
   width: 100%;
-  height: 4.6em;
+  height: 5.5em;
   background-color: #eaeaea;
   box-shadow: 0 5px 5px 0 #bfbdbd inset;
 }
@@ -142,7 +145,7 @@ body {
   padding: 3.5em 3.5em 5.5em 3.5em;
   display: flex;
   flex-flow: column wrap;
-  gap: 3.3em;
+  gap: 4em;
   align-items: center;
   background-color: #f5f5f5;
 }
@@ -160,18 +163,19 @@ body {
   border: none;
   border-radius: 7em;
   background-image: linear-gradient(#FF79da, #9356dc);
-  font-size: 1.5em;
+  font-size: 1.6em;
   font-weight: 400;
   color: #fff;
   box-shadow: 0 6px 12px 0 #bfbdbd;
   cursor: pointer;
 }
 .instructions {
-  margin: 4.5em 3em 7em 3em;
+  padding: 4.5em 3em 8em 3em;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  gap: 2em;
+  gap: 3em;
+  background-color: #fff;
 }
 .instructions__heading {
   margin-bottom: 0.2em;
@@ -230,38 +234,6 @@ i.fa-solid.fa-list::before {
   font-size: 1.3em;
 }
 
-@media screen and (min-width: 992px) {
-  .instructions {
-    gap: 0;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .instructions__heading {
-    margin-bottom: 0;
-    font-size: 2.3em;
-  }
-  .instructions__card {
-    justify-content: center;
-    gap: 1em;
-    padding: 2.5em;
-    height: 25em;
-    width: 23%;
-  }
-  .instructions__chip {
-    right: 0;
-    top: 0;
-    width: 3em;
-    height: 3em;
-    padding: 16px;
-    font-size: 1.5em;
-  }
-  .instructions__bar {
-    justify-content: center;
-    gap: 1em;
-    padding: 0;
-    font-size: 2em;
-  }
-}
 .restaurants {
   display: flex;
   flex-flow: column wrap;

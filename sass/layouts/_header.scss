@@ -5,13 +5,12 @@
 .header {
     @include flexRow;
     justify-content: center;
-    margin: 20px 0 20px 0;
+    padding: 1.9em 0 1.9em 0;
     background-color: #fff;
-    height: 3em;
 
     &__logo {
         width: 16em;
-        height: fit-content
+        height: fit-content;
     }
 
 }
@@ -19,10 +18,11 @@
 
 // MENU HEADER STYLING
 .header-menu { 
-    margin: 1.7em 12em 1.2em 2em;
+    padding: 1.8em 12em 1.3em 2em;
     @include flexRow;
     justify-content: space-between;
     align-items: center;
+    background-color: #fff;
 
     a {
         text-decoration: none;
@@ -30,12 +30,13 @@
     }
 
     &__icon {
-        font-size: 2.5em;
+        font-size: 2.1em;
     }
 
     &__logo {
         text-align: center;
-        width: 18em;
+        padding-left: 2em;
+        width: 20em;
         height: 3em;
     }
 }
@@ -43,10 +44,15 @@
 // TABLET AND DESKTOP MENU HEADER STYLING
 @media screen and (min-width: 768px) {
     .header-menu { 
-        margin: 2em;
-        @include flexRow;
         justify-content: space-between;
         align-items: center;
+        padding-right: 2.5em;
+
+        &__logo {
+            padding: 0;
+            width: 18em;
+        }
+            
     }
 }
 // END MENU HEADER STYLING
