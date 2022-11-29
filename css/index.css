@@ -135,8 +135,6 @@ body {
 @media screen and (min-width: 992px) {
   .location {
     background-color: transparent;
-    border-radius: 2em;
-    box-shadow: none;
   }
 }
 .explore {
@@ -237,7 +235,8 @@ i.fa-solid.fa-list::before {
     gap: 0;
     align-items: center;
     justify-content: space-evenly;
-    padding-bottom: 3.5em;
+    padding: 2.5em 4.5em 2.5em 4.5em;
+    box-shadow: 0 5px 20px 0 #bfbdbd inset;
   }
   .instructions__heading {
     margin-bottom: 0;
@@ -254,14 +253,11 @@ i.fa-solid.fa-list::before {
     background-color: transparent;
     box-shadow: none;
   }
-  .instructions #instructions__card--highlighted {
-    background-color: transparent;
-  }
   .instructions__chip {
     left: 0;
     padding: 0;
     background-color: transparent;
-    font-weight: 900;
+    font-size: 2.8em;
     border-radius: 0;
     color: #9356dc;
   }
@@ -271,6 +267,9 @@ i.fa-solid.fa-list::before {
     padding: 0;
     font-size: 1.2em;
     width: 80%;
+  }
+  #instructions__card--highlighted {
+    box-shadow: 0 5px 20px 0 #bfbdbd;
   }
 }
 .restaurants {
