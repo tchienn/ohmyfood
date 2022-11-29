@@ -18,7 +18,7 @@
 
 // MENU HEADER STYLING
 .header-menu { 
-    padding: 1.8em 12em 1.3em 2em;
+    padding: 1.8em 10em 1.3em 2em;
     @include flexRow;
     justify-content: space-between;
     align-items: center;
@@ -35,9 +35,8 @@
 
     &__logo {
         text-align: center;
-        padding-left: 3em;
-        width: 19em;
-        height: 3em;
+        width: 15em;
+        height: 2.7em;
     }
 }
 
@@ -50,7 +49,6 @@
 
         &__logo {
             padding: 0;
-            width: 18em;
         }
             
     }
