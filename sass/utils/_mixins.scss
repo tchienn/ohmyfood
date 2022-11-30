@@ -13,7 +13,7 @@
 }
 
 // Main button template
-@mixin button($padding: 1em 2em) {
+@mixin button($padding: 1em 2em, $boxShadow: 0 6px 12px 0 $colorBoxShadow) {
     padding: $padding;
     border: none;
     border-radius: 7em;
@@ -21,13 +21,12 @@
     font-size: 1.6em;
     font-weight: 400;
     color: #fff;
-    box-shadow: 0 6px 12px 0 $colorBoxShadow;
+    box-shadow: $boxShadow;
     cursor: pointer;
 
     &:hover {
         filter:brightness(106%);
         background-image: linear-gradient($colorSecondary, $colorPrimary);
-        box-shadow: 0 8px 10px 0 $colorBoxShadowEm;
     }
 }
 

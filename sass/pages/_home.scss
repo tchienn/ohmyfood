@@ -56,6 +56,27 @@
         @include button;
     }
 }
+
+// EXPLORE SECTION TABLET AND DESKTOP STYLING
+@media screen and (min-width: 992px) {
+    .explore {
+        background-image: url("../../assets/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+    
+        &__heading {
+            color: #fff;
+        }
+    
+        &__description {
+            font-weight: 400;
+            font-size: 1.7em;
+            color: #fff;
+        }
+    
+        &__btn {
+            @include button($boxShadow: none);
+        }
+    }
+}
 // END EXPLORE SECTION
 
 // INSTRUCTIONS SECTION

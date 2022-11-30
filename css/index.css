@@ -168,9 +168,36 @@ body {
 .explore__btn:hover {
   filter: brightness(106%);
   background-image: linear-gradient(#FF79da, #9356dc);
-  box-shadow: 0 8px 10px 0 #8b8b8b;
 }
 
+@media screen and (min-width: 992px) {
+  .explore {
+    background-image: url("../../assets/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+  }
+  .explore__heading {
+    color: #fff;
+  }
+  .explore__description {
+    font-weight: 400;
+    font-size: 1.7em;
+    color: #fff;
+  }
+  .explore__btn {
+    padding: 1em 2em;
+    border: none;
+    border-radius: 7em;
+    background-image: linear-gradient(#FF79da, #9356dc);
+    font-size: 1.6em;
+    font-weight: 400;
+    color: #fff;
+    box-shadow: none;
+    cursor: pointer;
+  }
+  .explore__btn:hover {
+    filter: brightness(106%);
+    background-image: linear-gradient(#FF79da, #9356dc);
+  }
+}
 .instructions {
   padding: 4.5em 3em 8em 3em;
   display: flex;
@@ -577,7 +604,6 @@ body {
 .menu-btn-order:hover {
   filter: brightness(106%);
   background-image: linear-gradient(#FF79da, #9356dc);
-  box-shadow: 0 8px 10px 0 #8b8b8b;
 }
 
 /*# sourceMappingURL=index.css.map */
