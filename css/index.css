@@ -461,6 +461,7 @@ body {
 .menu__heading {
   font-family: "Shrikhand", cursive;
   font-size: 2.7em;
+  width: 10em;
 }
 .menu__icon {
   font-size: 2.7em;
