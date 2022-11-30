@@ -149,7 +149,7 @@ body {
 .menu-btn {
     @include flexRow;
     justify-content: center;
-    margin: -2em 0 5em 0;
+    margin: -2em 0 6.5em 0;
 
     &-order {
         @include button($padding: 0.8em 4em 0.8em 4em);
