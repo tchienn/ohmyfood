@@ -82,7 +82,7 @@ body {
             font-size: 1.5em;
             font-weight: 500;
             // Below properties truncates flex elements with ellipses on hover
-            width: 12em;
+            // width: 12em;
             white-space: nowrap; // Collapses whitespace
             text-overflow: ellipsis; // Transforms the collapsed whitespace into ellipsis
             overflow: hidden; // Hides content that extends container boundary
@@ -91,7 +91,7 @@ body {
         &-info {
             font-size: 1.2em;
             font-weight: 300;
-            width: 12em;
+            // width: 12em;
             white-space: nowrap;
             text-overflow: ellipsis;
             overflow: hidden;
@@ -103,6 +103,11 @@ body {
         }
 
         &:hover {
+
+            .menu__card-right {
+                background-color: lightcoral;
+                flex-grow: 2;
+            }
 
             .select {
                 margin-right: 0;

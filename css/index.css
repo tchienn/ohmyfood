@@ -532,7 +532,6 @@ body {
 .menu__card-heading {
   font-size: 1.5em;
   font-weight: 500;
-  width: 12em;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -540,7 +539,6 @@ body {
 .menu__card-info {
   font-size: 1.2em;
   font-weight: 300;
-  width: 12em;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -548,6 +546,10 @@ body {
 .menu__card-price {
   margin: 3em 0.3em 0 0;
   font-size: 1.2em;
+}
+.menu__card:hover .menu__card-right {
+  background-color: lightcoral;
+  flex-grow: 2;
 }
 .menu__card:hover .select {
   margin-right: 0;
