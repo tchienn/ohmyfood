@@ -441,7 +441,139 @@ body {
   border-radius: 0;
   object-fit: cover;
   width: 100%;
-  height: 30em;
+  height: 22em;
+}
+
+.menu {
+  position: relative;
+  bottom: 2.7em;
+  width: 100%;
+  border-radius: 3em 3em 0 0;
+  background-color: #f5f5f5;
+}
+.menu__heading-container {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 3em 2em 2.5em 2em;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu__heading {
+  font-family: "Shrikhand", cursive;
+  font-size: 2.7em;
+}
+.menu__icon {
+  font-size: 2.7em;
+}
+.menu__list {
+  padding: 0 2em 3em 2em;
+}
+.menu__list-heading {
+  font-weight: 300;
+  font-size: 1.5em;
+}
+.menu__list-heading-underline {
+  margin: 0.5em 0 1.5em 0;
+  width: 4em;
+  height: 0.3em;
+  background-color: #99e2d0;
+}
+.menu__card {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin-bottom: 1.2em;
+  border-radius: 1.5em;
+  background-color: #fff;
+  box-shadow: 0 5px 15px 0 #bfbdbd;
+  overflow: hidden;
+}
+.menu__card-left {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 0.5em;
+  padding: 1.2em 0 1.2em 1.2em;
+}
+.menu__card-right {
+  display: flex;
+  flex-flow: row wrap;
+}
+.menu__card-heading {
+  font-size: 1.5em;
+  font-weight: 500;
+  width: 12em;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.menu__card-info {
+  font-size: 1.2em;
+  font-weight: 300;
+  width: 12em;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.menu__card-price {
+  margin: 3em 0.3em 0 0;
+  font-size: 1.2em;
+}
+.menu__card:hover .select {
+  margin-right: 0;
+}
+.menu__card:hover .select-icon::after {
+  transform: rotate(360deg);
+}
+
+.select {
+  margin-right: -3em;
+  transform: translateX(25%);
+  transition: 500ms ease-in-out;
+}
+.select-icon {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  padding-right: 1em;
+  width: 3.75em;
+  height: 100%;
+  background-color: #99e2d0;
+  color: #fff;
+}
+.select-icon::after {
+  display: flex;
+  flex-flow: row wrap;
+  content: "\f058";
+  font-family: "Font Awesome 5 Free";
+  font-size: 1.5em;
+  font-weight: 700;
+  font-style: normal;
+  transform: rotate(-180deg);
+  transition: 600ms ease-in-out;
+}
+
+.menu-btn {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: -2em 0 5em 0;
+}
+.menu-btn-order {
+  padding: 0.8em 4em 0.8em 4em;
+  border: none;
+  border-radius: 7em;
+  background-image: linear-gradient(#FF79da, #9356dc);
+  font-size: 1.6em;
+  font-weight: 400;
+  color: #fff;
+  box-shadow: 0 6px 12px 0 #bfbdbd;
+  cursor: pointer;
+}
+.menu-btn-order:hover {
+  filter: brightness(106%);
+  background-image: linear-gradient(#FF79da, #9356dc);
+  box-shadow: 0 8px 10px 0 #8b8b8b;
 }
 
 /*# sourceMappingURL=index.css.map */

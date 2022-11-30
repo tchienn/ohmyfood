@@ -13,8 +13,8 @@
 }
 
 // Main button template
-@mixin button {
-    padding: 1em 2em;
+@mixin button($padding: 1em 2em) {
+    padding: $padding;
     border: none;
     border-radius: 7em;
     background-image: linear-gradient($colorSecondary, $colorPrimary);
