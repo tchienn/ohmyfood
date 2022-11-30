@@ -263,6 +263,10 @@ i.fa-solid.fa-list::before {
             margin-right: 0.5em;
             font-size: 2.5em;
         }
+
+        &:hover {
+            box-shadow: 0 5px 35px 0 $colorBoxShadowEm;
+        }
     }
 }
 
@@ -276,7 +280,7 @@ i.fa-solid.fa-list::before {
 
         &__heading {
             @include flexRow;
-            justify-content: center;
+            justify-content: flex-start;
             font-size: 3em;
             width: 100%;
         }
