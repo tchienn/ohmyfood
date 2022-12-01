@@ -60,7 +60,7 @@
 // EXPLORE SECTION TABLET AND DESKTOP STYLING
 @media screen and (min-width: 992px) {
     .explore {
-        background-image: url("../../assets/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+        background-image: url("../../assets/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"); // Sets image as background on resize
     
         &__heading {
             color: #fff;
@@ -104,7 +104,7 @@
     }
 
     &__chip {
-        position: relative;
+        position: relative; // Makes sure that the number chip slightly exceeds the boundary of the flex container
         right: 1.3em;
         top: 2px;
         width: 2em;
@@ -133,14 +133,14 @@
 }
 
 #instructions__card--highlighted {
-    background-color: $hoverInstructionCardColor;
+    background-color: $hoverInstructionCardColor; // Sets light purple colour to third instruction card
 }
 
-i.fa-solid.fa-mobile-screen-button::before,
+i.fa-solid.fa-mobile-screen-button::before, 
 i.fa-solid.fa-list::before {
     color: $colorBoxShadowEm;
     font-size: 1.3em;
-}
+} // Sets primary color to icon in third instruction card
 
 #instructions__chip--highlighted {
     color: $colorPrimary;
@@ -219,6 +219,8 @@ i.fa-solid.fa-list::before {
         background-color: #fff;
         box-shadow: 0 5px 15px 0 $colorBoxShadow;
         width: 100%;
+        transform: scale(1); // Sets starting-point for hover animation
+        transition: transform 400ms; // Tells browser that we want to animate scale between inactive and active states, by selecting the transform property and setting an animation duration of 400ms
 
         a {
             text-decoration: none;
@@ -286,7 +288,7 @@ i.fa-solid.fa-list::before {
         }
 
         &:hover {
-            box-shadow: 0 5px 35px 0 $colorBoxShadowEm;
+            transform: scale(1.03); // Sets end-point for hover animation
         }
     }
 }

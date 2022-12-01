@@ -325,6 +325,8 @@ i.fa-solid.fa-list::before {
   background-color: #fff;
   box-shadow: 0 5px 15px 0 #bfbdbd;
   width: 100%;
+  transform: scale(1);
+  transition: transform 400ms;
 }
 .restaurants__card a {
   text-decoration: none;
@@ -383,7 +385,7 @@ i.fa-solid.fa-list::before {
   font-size: 2.5em;
 }
 .restaurants__card:hover {
-  box-shadow: 0 5px 35px 0 #8b8b8b;
+  transform: scale(1.03);
 }
 
 @media screen and (min-width: 992px) {
