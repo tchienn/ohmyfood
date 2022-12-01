@@ -102,23 +102,14 @@ body {
             font-size: 1.2em;
         }
 
-        &:hover {
-
-            .menu__card-right {
-                background-color: lightcoral;
-                flex-grow: 2;
-            }
-
-            .select {
-                margin-right: 0;
+        &:hover + .select {
         
-                &-icon {
-                    
-                    &::after {
-                        transform: rotate(360deg); // Applies the chip animation on card hover 
-                    }
-                }
-            }
+            // &-icon {
+                
+            //     &::after {
+            //         transform: rotate(360deg); // Applies the chip animation on card hover 
+            //     }
+            // }
         }
     }
 }

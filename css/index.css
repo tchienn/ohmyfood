@@ -549,17 +549,6 @@ body {
   margin: 3em 0.3em 0 0;
   font-size: 1.2em;
 }
-.menu__card:hover .menu__card-right {
-  background-color: lightcoral;
-  flex-grow: 2;
-}
-.menu__card:hover .select {
-  margin-right: 0;
-}
-.menu__card:hover .select-icon::after {
-  transform: rotate(360deg);
-}
-
 .select {
   margin-right: -3em;
   transform: translateX(25%);
