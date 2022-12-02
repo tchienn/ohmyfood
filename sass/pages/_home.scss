@@ -39,7 +39,7 @@
     @include flexColumn;
     gap: 4em;
     align-items: center;
-    background-color: $colorBackgroundLight;
+    background-color: $colorLightGrey;
 
     &__heading {
         font-size: 2.3em;
@@ -138,7 +138,7 @@
 
 i.fa-solid.fa-mobile-screen-button::before, 
 i.fa-solid.fa-list::before {
-    color: $colorBoxShadowEm;
+    color: darken($colorLightGrey, 40); // Function darkens grey colour otherwise used on site
     font-size: 1.3em;
 } // Sets primary color to icon in third instruction card
 
@@ -204,7 +204,7 @@ i.fa-solid.fa-list::before {
     gap: 0.6em;
     padding: 30px 30px 3.6em 30px;
     width: 100%;
-    background-color: $colorBackgroundLight;
+    background-color: $colorLightGrey;
 
     &__heading {
         margin: 1.4em 0 0.9em 0;

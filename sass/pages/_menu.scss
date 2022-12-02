@@ -2,7 +2,7 @@
 
 // Whole page styling
 body {
-    background-color: $colorBackgroundLight;
+    background-color: $colorLightGrey;
 }
 
 // Hero image styling
@@ -24,7 +24,7 @@ body {
     bottom: 2.7em; // Adjusts menu card position over hero image
     width: 100%;
     border-radius: 3em 3em 0 0;
-    background-color: $colorBackgroundLight;
+    background-color: $colorLightGrey;
 
     &__heading-container {
         @include flexRow;
