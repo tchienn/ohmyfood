@@ -1,5 +1,42 @@
 // This file stores home page styles
 
+// LOADER SECTION
+.loader {
+    position: fixed; // Ensures the loader remains in center of screen regardless of scroll
+    display: flex; // Sets flex context for alignment of items within the container
+    justify-content: center; // Aligns loader image in center
+    align-items: center; // Aligns loader image in center
+    z-index: 2; // Ensures loader is presented on top-most layer
+    background-color: #fff;
+    width: 100%; // Ensures loader takes up full width of screen
+    height: 100%; // Ensures loader takes up full height of screen
+    animation: loaderBackground 3s ease-in-out 1s forwards; // Makes sure the loader preview fades out after three seconds, revealing the site
+
+    &__border {
+        width: 6em; // Defines box width
+        height: 6em; // Defines box height
+        border: 0.2em solid $colorPrimary;
+        animation: loader 2500ms infinite ease-in-out;
+    
+        &-icon {
+            position: absolute;           
+            bottom: 0.5em; // Centers font awesome icon inside box
+            left: 0.5em; // Centers font awesome icon inside box
+            font-size: 3em; // Sets font awesome icon size
+            color: #fff; // Sets font awesome icon colour
+        }
+    }
+
+    &-inner {
+        vertical-align: top;
+        display: inline-block;
+        width: 100%;
+        background-color: $colorPrimary;
+        animation: loaderInner 2500ms infinite ease-in-out;
+    }
+}
+// END LOADER SECTION
+
 // LOCATION SECTION
 .location {
     @include flexRow;
