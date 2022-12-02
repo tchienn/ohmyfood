@@ -520,9 +520,14 @@ body {
   background-color: #fff;
   box-shadow: 0 5px 15px 0 #bfbdbd;
   overflow: hidden;
+  height: 5em;
 }
-.menu__card:hover {
-  background-color: green;
+.menu__card:hover .select {
+  transform: translateX(0);
+}
+.menu .select {
+  display: inline-block;
+  transform: translateX(280%);
 }
 
 .menu-btn {

@@ -67,11 +67,19 @@ body {
         background-color: #fff;
         box-shadow: 0 5px 15px 0 $colorBoxShadow;
         overflow: hidden; // Prevents chip animation from showing
+        height: 5em;
 
 
         &:hover {
-            background-color: green;
+            .select {
+                transform: translateX(0);
+            }
         }
+    }
+
+    .select {
+        display: inline-block;
+        transform: translateX(280%);
     }
 }
 
