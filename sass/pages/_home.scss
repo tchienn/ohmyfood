@@ -133,7 +133,7 @@
 }
 
 #instructions__card--highlighted {
-    background-color: $hoverInstructionCardColor; // Sets light purple colour to third instruction card
+    background-color: lighten($colorPrimary, 35); // Function lightens primary colour to highlight third instruction card
 }
 
 i.fa-solid.fa-mobile-screen-button::before, 
