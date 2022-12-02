@@ -4,7 +4,7 @@
 // Flex shortcuts
 @mixin flexRow($wrap: row wrap) {
     display: flex;
-    flex-flow: $wrap;
+    flex-flow: $wrap; // Included as argument so I can customise if necessary
 }
 
 @mixin flexColumn($wrap: column wrap) {
@@ -17,16 +17,19 @@
     padding: $padding;
     border: none;
     border-radius: 7em;
-    background-image: linear-gradient($colorSecondary, $colorPrimary);
+    background-image: linear-gradient($colorSecondary, $colorPrimary); // To achieve gradient effect between pink and purple
     font-size: 1.6em;
     font-weight: 400;
     color: #fff;
     box-shadow: $boxShadow;
     cursor: pointer;
+    transform: scale(1); // Sets starting-point for hover animation
+    transition: transform 400ms;
 
     &:hover {
         filter:brightness(106%);
         background-image: linear-gradient($colorSecondary, $colorPrimary);
+        transform: scale(1.03); // Sets end-point for hover animation
     }
 }
 

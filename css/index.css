@@ -235,10 +235,13 @@ body {
   color: #fff;
   box-shadow: 0 6px 12px 0 #bfbdbd;
   cursor: pointer;
+  transform: scale(1);
+  transition: transform 400ms;
 }
 .explore__btn:hover {
   filter: brightness(106%);
   background-image: linear-gradient(#FF79da, #9356dc);
+  transform: scale(1.03);
 }
 
 @media screen and (min-width: 992px) {
@@ -263,10 +266,13 @@ body {
     color: #fff;
     box-shadow: none;
     cursor: pointer;
+    transform: scale(1);
+    transition: transform 400ms;
   }
   .explore__btn:hover {
     filter: brightness(106%);
     background-image: linear-gradient(#FF79da, #9356dc);
+    transform: scale(1.03);
   }
 }
 .instructions {
@@ -589,14 +595,70 @@ body {
   background-color: #fff;
   box-shadow: 0 5px 15px 0 #bfbdbd;
   overflow: hidden;
-  height: 5em;
+}
+.menu__card-left {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 0.5em;
+  padding: 1.2em 0 1.2em 1.2em;
+}
+.menu__card-right {
+  display: flex;
+  flex-flow: row wrap;
+}
+.menu__card-heading {
+  font-size: 1.5em;
+  font-weight: 500;
+  width: 12em;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.menu__card-info {
+  font-size: 1.2em;
+  font-weight: 300;
+  width: 12em;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.menu__card-price {
+  margin: 3em 0.3em 0 0;
+  font-size: 1.2em;
 }
 .menu__card:hover .select {
-  transform: translateX(0);
+  margin-right: 0;
 }
-.menu .select {
-  display: inline-block;
-  transform: translateX(280%);
+.menu__card:hover .select-icon::after {
+  transform: rotate(360deg);
+}
+
+.select {
+  margin-right: -3em;
+  transform: translateX(25%);
+  transition: 500ms ease-in-out;
+}
+.select-icon {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  padding-right: 1em;
+  width: 3.75em;
+  height: 100%;
+  background-color: #99e2d0;
+  color: #fff;
+}
+.select-icon::after {
+  display: flex;
+  flex-flow: row wrap;
+  content: "\f058";
+  font-family: "Font Awesome 5 Free";
+  font-size: 1.5em;
+  font-weight: 700;
+  font-style: normal;
+  transform: rotate(-180deg);
+  transition: 600ms ease-in-out;
 }
 
 .menu-btn {
@@ -615,10 +677,13 @@ body {
   color: #fff;
   box-shadow: 0 6px 12px 0 #bfbdbd;
   cursor: pointer;
+  transform: scale(1);
+  transition: transform 400ms;
 }
 .menu-btn-order:hover {
   filter: brightness(106%);
   background-image: linear-gradient(#FF79da, #9356dc);
+  transform: scale(1.03);
 }
 
 /*# sourceMappingURL=index.css.map */
