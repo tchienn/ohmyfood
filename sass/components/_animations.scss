@@ -1,52 +1,53 @@
 // This file stores application-wide SASS animations
 
 // Loader animation
-@keyframes loaderBackground {
+@keyframes loaderBackground { 
     100% {
-        opacity: 0;
-    }
-}
+        opacity: 0; // Ensures that the loader becomes invisible when 100% complete (fades out)
+    } 
+} 
 
-@keyframes loader {
+@keyframes loader { // Defines the turning animation on the box at different moments
     0% {
         transform: rotate(0deg);
     }
 
     25% {
-        transform: rotate(180deg);
+        transform: rotate(180deg); // Rotates clockwise by 180 degrees between 0 and 25% of the animation run time
     }
 
     50% {
-        transform: rotate(180deg);
+        transform: rotate(180deg); // Remains at 180 degrees between 25% and 50% of the animation run time (resulting in a 'pause')
     }
 
     75% {
-        transform: rotate(360deg);
+        transform: rotate(360deg); // Rotates clockwise by 180 degrees between 50% and 75% of animation run time
     }
 
     100% {
-        transform: rotate(360deg);
+        transform: rotate(360deg); // Remains at 360 degrees between 75% and 100% of the animation run time (resulting in a 'pause')
     }
 }
 
 @keyframes loaderInner {
     0% {
         height: 0%;
-      }
-      
-      25% {
-        height: 0%;
-      }
-      
-      50% {
-        height: 100%;
-      }
-      
-      75% {
-        height: 100%;
-      }
-      
-      100% {
-        height: 0%;
-      }
+    }
+    
+    25% {
+        height: 0%; // Pizza image hidden between 0 and 25% of animation run time
+    }
+    
+    50% {
+        height: 100%; // The 'inner' of the box appears between 25% and 50% of animation run time, revealing the pizza image
+    }
+    
+    75% {
+        height: 100%; // 'Inner' remains at 100% of box during 50% and 75% of animation run time
+    }
+    
+    100% {
+        height: 0%; // 'Inner' disappears again between 75% and 100% of animation run time
+    }
 }
+// END LOADER ANIMATION RULES

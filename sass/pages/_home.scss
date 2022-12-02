@@ -10,13 +10,13 @@
     background-color: #fff; // Sets color of screen behind box animation (blocking out actual site)
     width: 100%; // Ensures loader takes up full width of screen
     height: 100%; // Ensures loader takes up full height of screen
-    animation: loaderBackground 3s ease-in-out 1s forwards; // Makes sure the loader preview fades out after three seconds, revealing the site
+    animation: loaderBackground 3s ease-in-out 1s forwards; // Refers to keyframe animation, makes sure the loader preview fades out after three seconds, revealing the site
 
     &__border {
         width: 6em; // Defines box width
         height: 6em; // Defines box height
         border: 0.2em solid $colorPrimary;
-        animation: loader 2500ms infinite ease-in-out;
+        animation: loader 2500ms infinite ease-in-out; // Defines the duration and the transitiion-timing-function of the loader keyframe animation
     
         &-icon {
             position: absolute;           
@@ -28,7 +28,7 @@
     }
 
     &-inner {
-        vertical-align: top; // Ensures the animation pans the whole box (top to bottom) during run-time
+        vertical-align: top; // Ensures the animation spans the whole box (top to bottom) during run-time
         display: inline-block; // Allows me to set a width to the contents of the box (icon and background color)
         width: 100%; // Ensures the inner spans 100% of the box
         background-color: $colorPrimary; // Sets colour inside the box
