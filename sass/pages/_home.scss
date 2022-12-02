@@ -246,7 +246,7 @@ i.fa-solid.fa-list::before {
                 background-color: $colorTertiary;
                 font-weight: 600;
                 font-size: 1.2em;
-                color: $labelTextColor;
+                color: darken($colorTertiary, 40); // Function darkens tertiary color for "New" label text
             }
         }
 
@@ -336,10 +336,8 @@ i.fa-solid.fa-list::before {
                     right: 20px;
                     padding: 0.5em 2em;
                     border-radius: 0.2em;
-                    background-color: $colorTertiary;
                     font-weight: 600;
                     font-size: 1.2em;
-                    color: $labelTextColor;
                 }
             }
     

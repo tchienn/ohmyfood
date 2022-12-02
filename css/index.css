@@ -350,7 +350,7 @@ i.fa-solid.fa-list::before {
   background-color: #99e2d0;
   font-weight: 600;
   font-size: 1.2em;
-  color: #31947b;
+  color: #278870;
 }
 .restaurants__card-img {
   border-radius: 1.2em 1.2em 0 0;
@@ -429,10 +429,8 @@ i.fa-solid.fa-list::before {
     right: 20px;
     padding: 0.5em 2em;
     border-radius: 0.2em;
-    background-color: #99e2d0;
     font-weight: 600;
     font-size: 1.2em;
-    color: #31947b;
   }
   .restaurants__card-img {
     border-radius: 1.2em 1.2em 0 0;
