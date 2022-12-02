@@ -68,80 +68,41 @@ body {
         box-shadow: 0 5px 15px 0 $colorBoxShadow;
         overflow: hidden; // Prevents chip animation from showing
 
-        &-left {
-            @include flexColumn;
-            gap: 0.5em;
-            padding: 1.2em 0 1.2em 1.2em;
-        }
 
-        &-right {
-            @include flexRow;
-        }
-
-        &-heading {
-            font-size: 1.5em;
-            font-weight: 500;
-            // Below properties truncates flex elements with ellipses on hover
-            // width: 12em;
-            white-space: nowrap; // Collapses whitespace
-            text-overflow: ellipsis; // Transforms the collapsed whitespace into ellipsis
-            overflow: hidden; // Hides content that extends container boundary
-        }
-
-        &-info {
-            font-size: 1.2em;
-            font-weight: 300;
-            // width: 12em;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-            overflow: hidden;
-        }
-
-        &-price {
-            margin: 3em 0.3em 0 0;
-            font-size: 1.2em;
-        }
-
-        &:hover + .select {
-        
-            // &-icon {
-                
-            //     &::after {
-            //         transform: rotate(360deg); // Applies the chip animation on card hover 
-            //     }
-            // }
+        &:hover {
+            background-color: green;
         }
     }
 }
 
 // Hover chip animation styling
-.select {
-    margin-right: -3em; // Hides chip element before hover
-    transform: translateX(25%); // Moves green chip to left
-    transition: 500ms ease-in-out; // Determines speed of animation
+// .select {
+//     margin-right: -3em; // Hides chip element before hover
+//     transform: translateX(25%); // Moves green chip to left
+//     transition: 500ms ease-in-out; // Determines speed of animation
     
-    &-icon {
-        @include flexRow;
-        justify-content: center;
-        align-items: center;
-        padding-right: 1em; // Centers icon
-        width: 3.75em;
-        height: 100%;
-        background-color: $colorTertiary;
-        color: #fff;
+//     &-icon {
+//         @include flexRow;
+//         justify-content: center;
+//         align-items: center;
+//         padding-right: 1em; // Centers icon
+//         width: 3.75em;
+//         height: 100%;
+//         background-color: $colorTertiary;
+//         color: #fff;
 
-        &::after {
-            @include flexRow;
-            content: "\f058"; // Dynamically adds font awesome icon to page
-            font-family: "Font Awesome 5 Free"; // Establishes font-type as FA font
-            font-size: 1.5em;
-            font-weight: 700;
-            font-style: normal; // Normalises icon display
-            transform: rotate(-180deg); // Spins icon
-            transition: 600ms ease-in-out; // Determines speed of animation
-        }
-    }
-}
+//         &::after {
+//             @include flexRow;
+//             content: "\f058"; // Dynamically adds font awesome icon to page
+//             font-family: "Font Awesome 5 Free"; // Establishes font-type as FA font
+//             font-size: 1.5em;
+//             font-weight: 700;
+//             font-style: normal; // Normalises icon display
+//             transform: rotate(-180deg); // Spins icon
+//             transition: 600ms ease-in-out; // Determines speed of animation
+//         }
+//     }
+// }
 
 .menu-btn {
     @include flexRow;
@@ -152,3 +113,69 @@ body {
         @include button($padding: 0.8em 4em 0.8em 4em);
     }
 }
+
+
+
+
+// LATER
+// &__card {
+//     @include flexRow;
+//     justify-content: space-between;
+//     margin-bottom: 1.2em;
+//     border-radius: 1.5em;
+//     background-color: #fff;
+//     box-shadow: 0 5px 15px 0 $colorBoxShadow;
+//     overflow: hidden; // Prevents chip animation from showing
+
+//     &-left {
+//         @include flexColumn;
+//         gap: 0.5em;
+//         padding: 1.2em 0 1.2em 1.2em;
+//     }
+
+//     &-right {
+//         @include flexRow;
+//     }
+
+//     &-heading {
+//         font-size: 1.5em;
+//         font-weight: 500;
+//         // Below properties truncates flex elements with ellipses on hover
+//         width: 12em;
+//         white-space: nowrap; // Collapses whitespace
+//         text-overflow: ellipsis; // Transforms the collapsed whitespace into ellipsis
+//         overflow: hidden; // Hides content that extends container boundary
+//     }
+
+//     &-info {
+//         font-size: 1.2em;
+//         font-weight: 300;
+//         width: 12em;
+//         white-space: nowrap;
+//         text-overflow: ellipsis;
+//         overflow: hidden;
+//     }
+
+//     &-price {
+//         margin: 3em 0.3em 0 0;
+//         font-size: 1.2em;
+//     }
+
+//     &:hover {
+
+//         .menu__card-right {
+//             background-color: brown;
+//         }
+
+//         .select {
+//             margin-right: 0;
+    
+//             &-icon {
+                
+//                 &::after {
+//                     transform: rotate(360deg); // Applies the chip animation on card hover 
+//                 }
+//             }
+//         }
+//     }
+// }
