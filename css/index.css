@@ -457,9 +457,16 @@ i.fa-solid.fa-list::before {
   letter-spacing: 0.3px;
   line-height: 1.7em;
 }
-.restaurants__card-heart {
-  margin-right: 0.5em;
+.restaurants__card .fa-heart {
   font-size: 2.5em;
+}
+.restaurants__card .fa-heart::before {
+  content: "\f004";
+  transition: color 500ms ease-in-out;
+}
+.restaurants__card .fa-heart:hover::before {
+  font-weight: 800;
+  color: #FF79da;
 }
 .restaurants__card:hover {
   transform: scale(1.03);
@@ -572,6 +579,14 @@ body {
 }
 .menu__icon {
   font-size: 2.7em;
+}
+.menu .fa-heart::before {
+  content: "\f004";
+  transition: color 500ms ease-in-out;
+}
+.menu .fa-heart:hover::before {
+  font-weight: 800;
+  color: #FF79da;
 }
 .menu__list {
   padding: 0 2em 3em 2em;

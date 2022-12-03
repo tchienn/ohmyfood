@@ -319,9 +319,17 @@ i.fa-solid.fa-list::before {
             line-height: 1.7em;
         }
 
-        &-heart {
-            margin-right: 0.5em;
+        .fa-heart {
             font-size: 2.5em;
+        }
+
+        .fa-heart::before {
+            content: "\f004"; // Dynamically inserts FA icon
+            transition: color 500ms ease-in-out; // Sets duration and style of 'color' transition on hover
+        }
+        .fa-heart:hover::before {
+            font-weight: 800; // Fills in the icon
+            color: $colorSecondary; 
         }
 
         &:hover {
