@@ -6,7 +6,7 @@
     display: flex; // Sets flex context for alignment of items within the container
     justify-content: center; // Aligns loader image in center
     align-items: center; // Aligns loader image in center
-    z-index: 2; // Ensures loader is presented on top-most layer
+    z-index: 10; // Ensures loader is presented on top-most layer
     background-color: #fff; // Sets color of screen behind box animation (blocking out actual site)
     width: 100%; // Ensures loader takes up full width of screen
     height: 100%; // Ensures loader takes up full height of screen
@@ -320,16 +320,29 @@ i.fa-solid.fa-list::before {
         }
 
         .fa-heart {
+            position: relative;
+            display: inline-block;
+            height: 100%;
+            width: 100%;
+            z-index: 5;
             font-size: 2.5em;
+            background-image: linear-gradient($colorSecondary, $colorPrimary);
         }
 
         .fa-heart::before {
+            position: absolute;
+            display: block;
+            top: 0; left: 0;
+            opacity: 0;
+            height: 100%;
+            width: 100%;
+            background-image: linear-gradient($colorSecondary, $colorPrimary);
             content: "\f004"; // Dynamically inserts FA icon
-            transition: color 500ms ease-in-out; // Sets duration and style of 'color' transition on hover
+            z-index: -100;
+            transition: opacity 0.45s;
         }
         .fa-heart:hover::before {
-            font-weight: 900; // Fills in the icon
-            color: $colorSecondary; 
+            opacity: 1;
         }
 
         &:hover {

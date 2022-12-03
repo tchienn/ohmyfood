@@ -155,7 +155,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 2;
+  z-index: 10;
   background-color: #fff;
   width: 100%;
   height: 100%;
@@ -455,15 +455,29 @@ i.fa-solid.fa-list::before {
   line-height: 1.7em;
 }
 .restaurants__card .fa-heart {
+  position: relative;
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  z-index: 5;
   font-size: 2.5em;
+  background-image: linear-gradient(#FF79da, #9356dc);
 }
 .restaurants__card .fa-heart::before {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(#FF79da, #9356dc);
   content: "\f004";
-  transition: color 500ms ease-in-out;
+  z-index: -100;
+  transition: opacity 0.45s;
 }
 .restaurants__card .fa-heart:hover::before {
-  font-weight: 900;
-  color: #FF79da;
+  opacity: 1;
 }
 .restaurants__card:hover {
   transform: scale(1.03);
