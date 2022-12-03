@@ -4,6 +4,7 @@
 @keyframes loaderBackground { 
     100% {
         opacity: 0; // Ensures that the loader becomes invisible when 100% complete (fades out)
+        z-index: -1;
     } 
 } 
 

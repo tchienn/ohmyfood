@@ -16,6 +16,7 @@ body {
 @keyframes loaderBackground {
   100% {
     opacity: 0;
+    z-index: -1;
   }
 }
 @keyframes loader {
@@ -240,8 +241,6 @@ body {
 }
 .explore__btn:hover {
   filter: brightness(106%);
-  background-image: linear-gradient(#FF79da, #9356dc);
-  transform: scale(1.03);
 }
 
 @media screen and (min-width: 992px) {
@@ -271,8 +270,6 @@ body {
   }
   .explore__btn:hover {
     filter: brightness(106%);
-    background-image: linear-gradient(#FF79da, #9356dc);
-    transform: scale(1.03);
   }
 }
 .instructions {
@@ -697,8 +694,6 @@ body {
 }
 .menu-btn-order:hover {
   filter: brightness(106%);
-  background-image: linear-gradient(#FF79da, #9356dc);
-  transform: scale(1.03);
 }
 
 /*# sourceMappingURL=index.css.map */

@@ -28,7 +28,6 @@
 
     &:hover {
         filter:brightness(106%);
-        background-image: linear-gradient($colorSecondary, $colorPrimary);
-        transform: scale(1.03); // Sets end-point for hover animation
+        $boxShadow: 0 12px 15px 0 $colorBoxShadow;
     }
 }
