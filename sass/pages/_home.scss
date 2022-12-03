@@ -319,30 +319,34 @@ i.fa-solid.fa-list::before {
             line-height: 1.7em;
         }
 
+        // .fa-heart {
+        //     font-size: 2.5em;
+        //     font-weight: 50;
+        //     background: linear-gradient(to right, #0000ff, #ADD8E6);
+        //     background-clip: fa-heart;
+        //     text-fill
+        //     transition: background 1000ms;
+        // }
+
+        // .fa-heart::before {
+        //     transition: color 500ms ease-in-out; // Sets duration and style of 'color' transition on hover
+        // }
+        // .fa-heart:hover::before {
+        //     font-weight: 900; // Fills in the icon
+        //     color: $colorSecondary; 
+        // }
         .fa-heart {
-            position: relative;
-            display: inline-block;
-            height: 100%;
-            width: 100%;
-            z-index: 5;
             font-size: 2.5em;
-            background-image: linear-gradient($colorSecondary, $colorPrimary);
+        }
+        
+        .fa-heart::before {
+            content: "\f004"; // Dynamically inserts FA icon
+            transition: color 500ms ease-in-out; // Sets duration and style of 'color' transition on hover
         }
 
-        .fa-heart::before {
-            position: absolute;
-            display: block;
-            top: 0; left: 0;
-            opacity: 0;
-            height: 100%;
-            width: 100%;
-            background-image: linear-gradient($colorSecondary, $colorPrimary);
-            content: "\f004"; // Dynamically inserts FA icon
-            z-index: -100;
-            transition: opacity 0.45s;
-        }
         .fa-heart:hover::before {
-            opacity: 1;
+            font-weight: 800; // Fills in the icon
+            color: $colorSecondary; 
         }
 
         &:hover {

@@ -455,29 +455,15 @@ i.fa-solid.fa-list::before {
   line-height: 1.7em;
 }
 .restaurants__card .fa-heart {
-  position: relative;
-  display: inline-block;
-  height: 100%;
-  width: 100%;
-  z-index: 5;
   font-size: 2.5em;
-  background-image: linear-gradient(#FF79da, #9356dc);
 }
 .restaurants__card .fa-heart::before {
-  position: absolute;
-  display: block;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  height: 100%;
-  width: 100%;
-  background-image: linear-gradient(#FF79da, #9356dc);
   content: "\f004";
-  z-index: -100;
-  transition: opacity 0.45s;
+  transition: color 500ms ease-in-out;
 }
 .restaurants__card .fa-heart:hover::before {
-  opacity: 1;
+  font-weight: 800;
+  color: #FF79da;
 }
 .restaurants__card:hover {
   transform: scale(1.03);
