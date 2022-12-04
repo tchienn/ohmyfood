@@ -28,6 +28,6 @@
 
     &:hover {
         filter:brightness(106%);
-        $boxShadow: 0 12px 15px 0 $colorBoxShadow;
+        box-shadow: 5px 5px 21px -7px black;
     }
 }
