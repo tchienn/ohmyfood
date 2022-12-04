@@ -454,16 +454,28 @@ i.fa-solid.fa-list::before {
   letter-spacing: 0.3px;
   line-height: 1.7em;
 }
+.restaurants__card-container--elt {
+  display: grid;
+}
 .restaurants__card .fa-heart {
   font-size: 2.5em;
 }
-.restaurants__card .fa-heart::before {
-  content: "\f004";
-  transition: color 500ms ease-in-out;
+.restaurants__card-heart-black {
+  grid-column: 1;
+  grid-row: 1;
 }
-.restaurants__card .fa-heart:hover::before {
-  font-weight: 800;
-  color: #FF79da;
+.restaurants__card-heart.fa-heart {
+  grid-column: 1;
+  grid-row: 1;
+  opacity: 0;
+  transition: opacity 400ms;
+  background: linear-gradient(#9356dc, #FF79da);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 900;
+}
+.restaurants__card-heart.fa-heart:hover {
+  opacity: 1;
 }
 .restaurants__card:hover {
   transform: scale(1.03);
