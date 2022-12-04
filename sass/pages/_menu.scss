@@ -43,15 +43,6 @@ body {
         font-size: 2.7em;
     }
 
-    .fa-heart::before {
-        content: "\f004";
-        transition: color 500ms ease-in-out;
-    }
-    .fa-heart:hover::before {
-        font-weight: 800;
-        color: $colorSecondary;
-    }
-
     &__list {
         padding: 0 2em 3em 2em;
 

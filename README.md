@@ -4,6 +4,8 @@ A menu selection application. A CSS animation-focused project using SCSS and HTM
 
 ## For developers
 
-Compile to SASS from within the sass directory using the following command:
+Compile to SASS using the following command:
 
-## sass --watch index.scss ../css/index.css
+```bash
+sass --watch sass/index.scss css/index.css
+```

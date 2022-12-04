@@ -589,14 +589,6 @@ body {
 .menu__icon {
   font-size: 2.7em;
 }
-.menu .fa-heart::before {
-  content: "\f004";
-  transition: color 500ms ease-in-out;
-}
-.menu .fa-heart:hover::before {
-  font-weight: 800;
-  color: #FF79da;
-}
 .menu__list {
   padding: 0 2em 3em 2em;
 }
