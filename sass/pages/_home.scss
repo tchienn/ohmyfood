@@ -319,35 +319,6 @@ i.fa-solid.fa-list::before {
             line-height: 1.7em;
         }
 
-        &-container--elt {
-            display: grid;
-        }
-
-        .fa-heart {
-            font-size: 2.5em;
-        }
-
-        &-heart-black {
-            grid-column: 1;
-            grid-row: 1;
-        }
-
-        &-heart.fa-heart {
-            grid-column: 1;
-            grid-row: 1;
-            opacity: 0;
-            transition: opacity 400ms;
-            background: linear-gradient($colorPrimary, $colorSecondary);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            font-weight: 900;
-
-            &:hover {
-                opacity: 1;
-            }
-
-        }
-
         &:hover {
             transform: scale(1.03); // Sets end-point for hover animation
         }

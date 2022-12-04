@@ -27,19 +27,16 @@ body {
     background-color: $colorLightGrey;
 
     &__heading-container {
-        @include flexRow;
+        display: flex;
+        flex-flow: row nowrap;
         padding: 3em 2em 2.5em 2em;
         justify-content: space-between;
-        align-items: center;
+        align-items: baseline;
+        gap: 30px;
     }
 
     &__heading {
         font-family: $logoFont;
-        font-size: 2.7em;
-        width: 10em;
-    }
-
-    &__icon {
         font-size: 2.7em;
     }
 
