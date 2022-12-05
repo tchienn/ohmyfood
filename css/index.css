@@ -18,7 +18,7 @@ body {
 }
 
 .fa-heart {
-  font-size: 2.5em;
+  font-size: 2.5rem;
 }
 
 .heart-black {
@@ -82,16 +82,16 @@ body {
 }
 .footer {
   display: flex;
-  flex-flow: column wrap;
-  gap: 1em;
+  flex-flow: column nowrap;
+  gap: 1rem;
   width: 100%;
-  padding: 2em;
+  padding: 2rem;
   background-color: #323232;
 }
 .footer__title {
-  margin-bottom: 1em;
-  font-size: 1.6em;
-  letter-spacing: 0.05em;
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+  letter-spacing: 0.05rem;
   font-family: "Shrikhand", cursive;
   color: #fff;
 }
@@ -103,8 +103,8 @@ body {
   margin-right: 10px;
 }
 .footer__list-item {
-  font-size: 1.5em;
-  margin-bottom: 0.5em;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 .footer__list-item a {
   text-decoration: none;
@@ -117,14 +117,14 @@ body {
     flex-flow: row wrap;
   }
   .footer__title {
-    font-size: 3em;
+    font-size: 3rem;
     margin-bottom: 0;
   }
   .footer__list {
     width: 100%;
   }
   .footer__list-item {
-    margin-right: 0.5em;
+    margin-right: 0.5rem;
     display: inline;
   }
   #suggest-item {
@@ -136,20 +136,20 @@ body {
 }
 .header {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
   justify-content: center;
-  padding: 1.9em 0 1.9em 0;
+  padding: 1.9rem 0 1.9rem 0;
   background-color: #fff;
 }
 .header__logo {
-  width: 16em;
+  width: 16rem;
   height: fit-content;
 }
 
 .header-menu {
-  padding: 1.8em 10em 1.3em 2em;
+  padding: 1.8rem 10rem 1.3rem 2rem;
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
   background-color: #fff;
@@ -159,19 +159,19 @@ body {
   color: #000;
 }
 .header-menu__icon {
-  font-size: 2.1em;
+  font-size: 2.1rem;
 }
 .header-menu__logo {
   text-align: center;
-  width: 15em;
-  height: 2.7em;
+  width: 15rem;
+  height: 2.7rem;
 }
 
 @media screen and (min-width: 768px) {
   .header-menu {
     justify-content: space-between;
     align-items: center;
-    padding-right: 2.5em;
+    padding-right: 2.5rem;
   }
   .header-menu__logo {
     padding: 0;
@@ -189,16 +189,16 @@ body {
   animation: loaderBackground 3000ms 1000ms forwards;
 }
 .loader__border {
-  width: 6em;
-  height: 6em;
-  border: 0.2em solid #9356dc;
+  width: 6rem;
+  height: 6rem;
+  border: 0.2rem solid #9356dc;
   animation: loader 2500ms infinite forwards;
 }
 .loader__border-icon {
   position: absolute;
-  bottom: 0.5em;
-  left: 0.5em;
-  font-size: 3em;
+  bottom: 1.5rem;
+  left: 1.5rem;
+  font-size: 3rem;
   color: #fff;
 }
 .loader-inner {
@@ -211,21 +211,21 @@ body {
 
 .location {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
-  gap: 1.5em;
+  gap: 1.5rem;
   width: 100%;
-  height: 5.5em;
+  height: 5.5rem;
   background-color: #eaeaea;
   box-shadow: 0 5px 5px 0 #bfbdbd inset;
 }
 .location__title {
   font-weight: 400;
-  font-size: 1.5em;
+  font-size: 1.5rem;
 }
 .location__icon {
-  font-size: 1.5em;
+  font-size: 1.5rem;
 }
 .location__title {
   color: #000;
@@ -237,28 +237,28 @@ body {
   }
 }
 .explore {
-  padding: 3.5em 3.5em 5.5em 3.5em;
+  padding: 3.5rem 3.5rem 5.5rem 3.5rem;
   display: flex;
-  flex-flow: column wrap;
-  gap: 4em;
+  flex-flow: column nowrap;
+  gap: 4rem;
   align-items: center;
   background-color: #f5f5f5;
 }
 .explore__heading {
-  font-size: 2.3em;
+  font-size: 2.3rem;
   color: #000;
 }
 .explore__description {
   font-weight: 200;
-  font-size: 1.7em;
+  font-size: 1.7rem;
   text-align: center;
 }
 .explore__btn {
-  padding: 1em 2em;
+  padding: 1rem 2rem;
   border: none;
-  border-radius: 7em;
+  border-radius: 7rem;
   background-image: linear-gradient(#FF79da, #9356dc);
-  font-size: 1.6em;
+  font-size: 1.6rem;
   font-weight: 400;
   color: #fff;
   box-shadow: 0 6px 12px 0 #bfbdbd;
@@ -280,15 +280,15 @@ body {
   }
   .explore__description {
     font-weight: 400;
-    font-size: 1.7em;
+    font-size: 1.7rem;
     color: #fff;
   }
   .explore__btn {
-    padding: 1em 2em;
+    padding: 1rem 2rem;
     border: none;
-    border-radius: 7em;
+    border-radius: 7rem;
     background-image: linear-gradient(#FF79da, #9356dc);
-    font-size: 1.6em;
+    font-size: 1.6rem;
     font-weight: 400;
     color: #fff;
     box-shadow: none;
@@ -302,53 +302,54 @@ body {
   }
 }
 .instructions {
-  padding: 4.5em 3em 8em 3em;
+  padding: 4.5rem 3rem 8rem 3rem;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  gap: 3em;
+  gap: 3rem;
   background-color: #fff;
 }
 .instructions__heading {
-  margin-bottom: 0.2em;
-  font-size: 2.3em;
+  font-size: 2.2rem;
+  margin-bottom: 0.2rem;
 }
 .instructions__card {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
   justify-content: flex-start;
   border: 1px solid transparent;
   background-color: #f7f7f7;
-  border-radius: 2em;
-  padding: 2.1em 2.5em 2.1em 0.5em;
+  border-radius: 2rem;
+  padding: 2.1rem 2.5rem 2.1rem 0.5rem;
   width: 100%;
   box-shadow: 0 5px 20px 0 #bfbdbd;
 }
 .instructions__chip {
   position: relative;
-  right: 1.3em;
-  top: 2px;
+  right: 1.4rem;
+  top: 5px;
   width: 2em;
   height: 2em;
   padding: 8px;
   border-radius: 100px;
   border: 2px solid transparent;
   background-color: #9356dc;
-  font-size: 1.5em;
+  font-size: 1.3rem;
   color: #fff;
   overflow: hidden;
 }
 .instructions__bar {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
   justify-content: space-between;
-  gap: 1.2em;
-  padding: 0.5em;
+  gap: 1.2rem;
+  padding: 0.5rem;
   font-weight: 500;
-  font-size: 1.7em;
+  font-size: 1.5rem;
 }
 .instructions__txt {
   color: black;
+  text-align: start;
 }
 
 #instructions__card--highlighted {
@@ -358,51 +359,48 @@ body {
 i.fa-solid.fa-mobile-screen-button::before,
 i.fa-solid.fa-list::before {
   color: #8f8f8f;
-  font-size: 1.3em;
+  font-size: 1.7rem;
 }
 
 #instructions__chip--highlighted {
   color: #9356dc;
-  font-size: 1.3em;
+  font-size: 1.7rem;
 }
 
 @media screen and (min-width: 992px) {
   .instructions {
-    gap: 0;
+    justify-content: center;
     align-items: center;
-    justify-content: space-evenly;
-    padding: 2.5em 4.5em 2.5em 4.5em;
+    padding: 2.5rem 4.5rem 2.5rem 4.5rem;
     box-shadow: 0 5px 20px 0 #bfbdbd inset;
   }
   .instructions__heading {
     margin-bottom: 0;
-    font-size: 2em;
+    font-size: 2rem;
     color: #9356dc;
   }
   .instructions__card {
-    justify-content: center;
     align-items: center;
     border: none;
-    padding: 1.5em;
-    height: 15em;
+    padding: 1.5rem;
+    height: 15rem;
     width: 18%;
-    background-color: transparent;
     box-shadow: none;
   }
   .instructions__chip {
-    left: 0;
-    padding: 0;
+    right: 0;
     background-color: transparent;
-    font-size: 2.8em;
+    font-size: 2rem;
     border-radius: 0;
     color: #9356dc;
   }
   .instructions__bar {
     justify-content: center;
-    gap: 1em;
     padding: 0;
-    font-size: 1.2em;
-    width: 80%;
+    font-size: 18px;
+  }
+  .instructions .instructions-icon {
+    display: none;
   }
   #instructions__card--highlighted {
     box-shadow: 0 5px 20px 0 #bfbdbd;
@@ -410,26 +408,24 @@ i.fa-solid.fa-list::before {
 }
 .restaurants {
   display: flex;
-  flex-flow: column wrap;
-  gap: 0.6em;
-  padding: 30px 30px 3.6em 30px;
+  flex-flow: column nowrap;
+  gap: 0.6rem;
+  padding: 30px 30px 4rem 30px;
   width: 100%;
   background-color: #f5f5f5;
 }
 .restaurants__heading {
-  margin: 1.4em 0 0.9em 0;
-  font-size: 2.2em;
+  margin: 1.6rem 0 1.6rem 0;
+  font-size: 2.2rem;
 }
 .restaurants__card {
   margin-bottom: 20px;
-  height: 23.5em;
+  height: 23.5rem;
   border-color: transparent;
-  border-radius: 1.2em;
+  border-radius: 1.2rem;
   background-color: #fff;
   box-shadow: 0 5px 15px 0 #bfbdbd;
   width: 100%;
-  transform: scale(1);
-  transition: transform 400ms;
 }
 .restaurants__card a {
   text-decoration: none;
@@ -439,123 +435,70 @@ i.fa-solid.fa-list::before {
   position: relative;
 }
 .restaurants__card-img-container-img {
-  border-radius: 1.2em 1.2em 0 0;
+  border-radius: 1.2rem 1.2rem 0 0;
   object-fit: cover;
   width: 100%;
-  height: 16.5em;
+  height: 16.5rem;
 }
 .restaurants__card-img-container-label {
   position: absolute;
   top: 20px;
   right: 20px;
-  padding: 0.5em 2em;
-  border-radius: 0.2em;
+  padding: 0.5rem 2rem;
+  border-radius: 0.2rem;
   background-color: #99e2d0;
   font-weight: 600;
-  font-size: 1.2em;
+  font-size: 1.2rem;
   color: #278870;
 }
 .restaurants__card-img {
-  border-radius: 1.2em 1.2em 0 0;
+  border-radius: 1.2rem 1.2rem 0 0;
   object-fit: cover;
   width: 100%;
-  height: 16.5em;
+  height: 16.5rem;
 }
 .restaurants__card-img-container-label {
-  padding-top: 0.5em;
+  padding-top: 0.5rem;
 }
 .restaurants__card-caption-container {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
-  padding: 1em;
+  padding: 1rem;
 }
 .restaurants__card-heading {
   margin: 5px 0 0 15px;
   letter-spacing: 0.3px;
-  font-size: 1.5em;
+  font-size: 1.5rem;
 }
 .restaurants__card-info {
   margin-left: 15px;
   font-weight: 300;
-  font-size: 1.5em;
+  font-size: 1.5rem;
   letter-spacing: 0.3px;
-  line-height: 1.7em;
+  line-height: 2.5rem;
 }
 .restaurants__card:hover {
-  transform: scale(1.03);
+  box-shadow: 5px 5px 21px -7px black;
 }
 
 @media screen and (min-width: 992px) {
   .restaurants {
-    display: flex;
     flex-flow: row wrap;
     align-items: center;
-    gap: 2em;
-    padding: 3em 10em 8em 10em;
+    gap: 2rem;
+    padding: 3rem 10rem 8rem 10rem;
   }
   .restaurants__heading {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     justify-content: flex-start;
-    font-size: 3em;
+    font-size: 3rem;
     width: 100%;
   }
   .restaurants__card {
-    margin-bottom: 20px;
-    height: 23.5em;
-    border-color: transparent;
-    border-radius: 1.2em;
-    background-color: #fff;
-    box-shadow: 0 5px 15px 0 #bfbdbd;
     width: 45%;
-  }
-  .restaurants__card a {
-    text-decoration: none;
-    color: #000;
-  }
-  .restaurants__card-img-container {
-    position: relative;
-  }
-  .restaurants__card-img-container-img {
-    border-radius: 1.2em 1.2em 0 0;
-    object-fit: cover;
-  }
-  .restaurants__card-img-container-label {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    padding: 0.5em 2em;
-    border-radius: 0.2em;
-    font-weight: 600;
-    font-size: 1.2em;
-  }
-  .restaurants__card-img {
-    border-radius: 1.2em 1.2em 0 0;
-    object-fit: cover;
-  }
-  .restaurants__card-img-container-label {
-    padding-top: 0.5em;
-  }
-  .restaurants__card-caption-container {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1em;
-  }
-  .restaurants__card-heading {
-    margin: 5px 0 0 15px;
-    letter-spacing: 0.3px;
-    font-size: 1.5em;
-  }
-  .restaurants__card-info {
-    margin-left: 15px;
-    font-weight: 300;
-    font-size: 1.5em;
-    letter-spacing: 0.3px;
-    line-height: 1.7em;
   }
 }
 body {
@@ -570,80 +513,81 @@ body {
   border-radius: 0;
   object-fit: cover;
   width: 100%;
-  height: 22em;
+  height: 22rem;
 }
 
 .menu {
   position: relative;
-  bottom: 2.7em;
+  bottom: 2.7rem;
   width: 100%;
-  border-radius: 3em 3em 0 0;
+  border-radius: 3rem 3rem 0 0;
   background-color: #f5f5f5;
 }
 .menu__heading-container {
   display: flex;
   flex-flow: row nowrap;
-  padding: 3em 2em 2.5em 2em;
+  padding: 3rem 2rem 2.5rem 2rem;
   justify-content: space-between;
   align-items: baseline;
   gap: 30px;
 }
 .menu__heading {
   font-family: "Shrikhand", cursive;
-  font-size: 2.7em;
+  font-size: 2.7rem;
 }
 .menu__list {
-  padding: 0 2em 3em 2em;
+  padding: 0 2rem 3rem 2rem;
 }
 .menu__list-heading {
   font-weight: 300;
-  font-size: 1.5em;
+  font-size: 1.5rem;
 }
 .menu__list-heading-underline {
-  margin: 0.5em 0 1.5em 0;
-  width: 4em;
-  height: 0.3em;
+  margin: 0.5rem 0 1.5rem 0;
+  width: 4rem;
+  height: 0.3rem;
   background-color: #99e2d0;
 }
 .menu__card {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
   justify-content: space-between;
-  margin-bottom: 1.2em;
-  border-radius: 1.5em;
-  background-color: #fff;
+  margin-bottom: 1.2rem;
+  border-radius: 1.5rem;
   box-shadow: 0 5px 15px 0 #bfbdbd;
   overflow: hidden;
 }
 .menu__card-left {
   display: flex;
-  flex-flow: column wrap;
-  gap: 0.5em;
-  padding: 1.2em 0 1.2em 1.2em;
+  flex-flow: column nowrap;
+  gap: 0.5rem;
+  padding: 1.2rem 0 1.2rem 1.2rem;
+  width: calc(100% - 50px - 30px);
 }
 .menu__card-right {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
 }
 .menu__card-heading {
-  font-size: 1.5em;
+  font-size: 1.5rem;
   font-weight: 500;
-  width: 12em;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
 }
 .menu__card-info {
-  font-size: 1.2em;
+  font-size: 1.2rem;
   font-weight: 300;
-  width: 12em;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
 }
 .menu__card-price {
-  margin: 3em 0.3em 0 0;
-  font-size: 1.2em;
+  margin: 3rem 0.3rem 0 0;
+  font-size: 1.2rem;
+}
+.menu__card:hover .menu__card-left {
+  width: calc(100% - 50px - 30px - 50px);
 }
 .menu__card:hover .select {
   margin-right: 0;
@@ -653,27 +597,27 @@ body {
 }
 
 .select {
-  margin-right: -3em;
+  margin-right: -3rem;
   transform: translateX(25%);
   transition: 500ms ease-in-out;
 }
 .select-icon {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
-  padding-right: 1em;
-  width: 3.75em;
+  padding-right: 1rem;
+  width: 3.75rem;
   height: 100%;
   background-color: #99e2d0;
   color: #fff;
 }
 .select-icon::after {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
   content: "\f058";
   font-family: "Font Awesome 5 Free";
-  font-size: 1.5em;
+  font-size: 1.5rem;
   font-weight: 700;
   font-style: normal;
   transform: rotate(-180deg);
@@ -682,16 +626,16 @@ body {
 
 .menu-btn {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
   justify-content: center;
-  margin: -2em 0 6.5em 0;
+  margin: 0 0 6.5rem 0;
 }
 .menu-btn-order {
-  padding: 0.8em 4em 0.8em 4em;
+  padding: 0.8rem 4rem 0.8rem 4rem;
   border: none;
-  border-radius: 7em;
+  border-radius: 7rem;
   background-image: linear-gradient(#FF79da, #9356dc);
-  font-size: 1.6em;
+  font-size: 1.6rem;
   font-weight: 400;
   color: #fff;
   box-shadow: 0 6px 12px 0 #bfbdbd;

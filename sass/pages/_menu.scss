@@ -70,8 +70,8 @@ body {
             flex-flow: column nowrap; // Aligns content vertically on left hand side of card
             gap: 0.5rem;
             padding: 1.2rem 0 1.2rem 1.2rem;
-            background-color: aqua;
-            width: calc(100% - 100px);
+            width: calc(100% - 50px - 30px); // Sets an ideal fixed width for card's first flex item by calculating length of total card 
+            // - the gap between flex item 1 and 2 (50px) - the width of flex item 2 (30px) 
         }
     
         &-right {
@@ -82,7 +82,7 @@ body {
         &-heading {
             font-size: 1.5rem;
             font-weight: 500;
-            // Below properties truncate flex elements with ellipses on hover
+            // Below properties truncate flex elements with ellipses on card hover
             white-space: nowrap;
             text-overflow: ellipsis;
             overflow: hidden; 
@@ -91,7 +91,7 @@ body {
         &-info {
             font-size: 1.2rem;
             font-weight: 300;
-            // Below properties truncate flex elements with ellipses on hover
+            // Below properties truncate flex elements with ellipses on card hover
             white-space: nowrap;
             text-overflow: ellipsis;
             overflow: hidden;
@@ -104,9 +104,16 @@ body {
     
         &:hover {
 
+            .menu__card-left {
+                width: calc(100% - 50px - 30px - 50px) 
+                // Adjusts width of card's first flex item by calculating length of total card 
+                // - the gap between flex item 1 and 2 (50px) - the width of flex item 2 (30px) 
+                // - the width of the .select icon (50px). This means the description in flex item 1 will 
+                // be truncated when carscreen is resized 
+            }
+
             .select {
                 margin-right: 0;
-                width: calc(100% + 100px);
         
                 &-icon {
                     
