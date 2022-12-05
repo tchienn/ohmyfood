@@ -1,16 +1,17 @@
 // This file stores application-wide footer styles
 
 .footer {
-    @include flexColumn;
-    gap: 1em;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
     width: 100%;
-    padding: 2em;
+    padding: 2rem;
     background-color: $colorFooter;
 
     &__title {
-        margin-bottom: 1em;
-        font-size: 1.6em;
-        letter-spacing: 0.05em;
+        margin-bottom: 1rem;
+        font-size: 1.6rem;
+        letter-spacing: 0.05rem;
         font-family: $logoFont;
         color: #fff;
     }
@@ -24,8 +25,8 @@
         }
 
         &-item {
-            font-size: 1.5em;
-            margin-bottom: 0.5em;
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
             
             a {
                 text-decoration: none;
@@ -38,10 +39,11 @@
 // TABLET AND DESKTOP FOOTER STYLING
 @media screen and (min-width: 768px) {
     .footer {
-        @include flexRow;
+        display: flex;
+        flex-flow: row wrap;
     
         &__title {
-            font-size: 3em;
+            font-size: 3rem;
             margin-bottom: 0;
         }
     
@@ -49,7 +51,7 @@
             width: 100%;
 
             &-item {
-                margin-right: 0.5em;
+                margin-right: 0.5rem;
                 display: inline;
             }    
         }

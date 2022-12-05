@@ -3,13 +3,14 @@
 // HOME HEADER SECTION STYLING
 // MOBILE STYLING
 .header {
-    @include flexRow;
+    display: flex;
+    flex-flow: row nowrap;
     justify-content: center;
-    padding: 1.9em 0 1.9em 0;
+    padding: 1.9rem 0 1.9rem 0;
     background-color: #fff;
 
     &__logo {
-        width: 16em;
+        width: 16rem;
         height: fit-content;
     }
 
@@ -18,8 +19,9 @@
 
 // MENU HEADER STYLING
 .header-menu { 
-    padding: 1.8em 10em 1.3em 2em;
-    @include flexRow;
+    padding: 1.8rem 10rem 1.3rem 2rem;
+    display: flex;
+    flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
     background-color: #fff;
@@ -30,13 +32,13 @@
     }
 
     &__icon {
-        font-size: 2.1em;
+        font-size: 2.1rem;
     }
 
     &__logo {
         text-align: center;
-        width: 15em;
-        height: 2.7em;
+        width: 15rem;
+        height: 2.7rem;
     }
 }
 
@@ -45,7 +47,7 @@
     .header-menu { 
         justify-content: space-between;
         align-items: center;
-        padding-right: 2.5em;
+        padding-right: 2.5rem;
 
         &__logo {
             padding: 0;
