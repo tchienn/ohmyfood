@@ -64,13 +64,21 @@ body {
         border-radius: 1.5rem;
         box-shadow: 0 5px 15px 0 $colorBoxShadow;
         overflow: hidden; // Prevents chip animation from showing
+        animation: appear 1000ms ease-in-out forwards; // Calls 'appear' keyframe animation stored in ../components/_animations. 'forwards' keyword ensures that animation ends when each element reaches 100% opacity
+        opacity: 0;
+
+        @for $i from 1 through 10 { // Applies transition incrementally from '1' to '9'
+            &:nth-child(#{$i}) { // '$' defines 'i' as a variable that stands in for elements '1' - '9'
+                animation-delay: calc(#{$i} * 500ms); // Uses calc() function to delay the animation of each element by 0.5 seconds
+            }
+        }
     
         &-left {
             display: flex;
             flex-flow: column nowrap; // Aligns content vertically on left hand side of card
             gap: 0.5rem;
             padding: 1.2rem 0 1.2rem 1.2rem;
-            width: calc(100% - 50px - 30px); // Sets an ideal fixed width for card's first flex item by calculating length of total card 
+            width: calc(100% - 80px); // Sets an ideal fixed width for card's first flex item by calculating length of total card 
             // - the gap between flex item 1 and 2 (50px) - the width of flex item 2 (30px) 
         }
     
@@ -105,7 +113,7 @@ body {
         &:hover {
 
             .menu__card-left {
-                width: calc(100% - 50px - 30px - 50px) 
+                width: calc(100% - 130px) 
                 // Adjusts width of card's first flex item by calculating length of total card 
                 // - the gap between flex item 1 and 2 (50px) - the width of flex item 2 (30px) 
                 // - the width of the .select icon (50px). This means the description in flex item 1 will 
