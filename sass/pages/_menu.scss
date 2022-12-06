@@ -43,7 +43,7 @@ body {
     }
 
     &__list {
-        padding: 0 2rem 3rem 2rem;
+        padding: 0 2rem 1rem 2rem;
 
         &-heading {
             font-weight: 300;
@@ -177,14 +177,44 @@ body {
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
-    margin: 0 0 6.5rem 0;
+    padding-bottom: 5.5rem;
 
     &-order {
-        @include button($padding: 0.8rem 4rem 0.8rem 4rem);
+        @include button($padding: 1.5rem 6.5rem 1.5rem 6.5rem);
     }
 }
 // END BUTTON STYLES
 // END MENU SECTION MOBILE STYLES
 
 // MENU SECTION TABLET AND DESKTOP STYLES
+@media screen and (min-width: 992px) {
+    .menu {
+        display: grid;
+        justify-content: center;
+    
+        &__heading-container {
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+        }
+    
+        &__heading {
+            font-size: 3.7rem;
+        }
+    
+        &__list {
+
+            &-heading {
+                padding-top: 3rem;
+            }
+
+        }
+
+        &__card {
+            width: 700px;
+        }
+
+    }
+}
 // END MENU SECTION TABLET AND DESKTOP STYLES
+// END MENU SECTION STYLES
