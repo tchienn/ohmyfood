@@ -1,6 +1,6 @@
 // This file stores home page styles
 
-// LOADER SECTION
+// LOADER SECTION STYLES
 .loader {
     position: fixed; // Ensures the loader remains in center of screen regardless of scroll
     display: flex; // Sets flex context for alignment of items within the container
@@ -35,9 +35,10 @@
         animation: loaderInner 2500ms infinite forwards; // Calls to the keyframe animation I made, defining the speed and making sure it loops infinitely while the loading screen is on
     }
 }
-// END LOADER SECTION
+// END LOADER SECTION STYLES
 
-// LOCATION SECTION
+// LOCATION SECTION STYLES
+// LOCATION SECTION MOBILE STYLES
 .location {
     display: flex;
     flex-flow: row nowrap;
@@ -62,16 +63,19 @@
         color: #000;
     }
 }
+// END LOCATION SECTION MOBILE STYLES
 
-//LOCATION SECTION TABLET AND DESKTOP STYLING
+// LOCATION SECTION TABLET AND DESKTOP STYLES
 @media screen and (min-width: 992px) {
     .location {
         background-color: transparent;
     }
 }
-// END LOCATION SECTION STYLING
+// END LOCATION SECTION TABLET AND DESKTOP STYLES
+// END LOCATION SECTION STYLES
 
-// EXPLORE SECTION
+// EXPLORE SECTION STYLES
+// END EXPLORE SECTION MOBILE STYLES
 .explore {
     padding: 3.5rem 3.5rem 5.5rem 3.5rem;
     display: flex;
@@ -95,8 +99,9 @@
         @include button;
     }
 }
+// END EXPLORE SECTION MOBILE STYLES
 
-// EXPLORE SECTION TABLET AND DESKTOP STYLING
+// EXPLORE SECTION TABLET AND DESKTOP STYLES
 @media screen and (min-width: 992px) {
     .explore {
         background-image: url("../../assets/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"); // Sets image as background on resize
@@ -116,9 +121,11 @@
         }
     }
 }
-// END EXPLORE SECTION
+// END EXPLORE SECTION TABLET AND DESKTOP STYLES
+// END EXPLORE SECTION STYLES
 
-// INSTRUCTIONS SECTION
+// INSTRUCTIONS SECTION STYLES
+// INSTRUCTIONS SECTION MOBILE STYLES
 .instructions {
     padding: 4.5rem 3rem 8rem 3rem;
     display: flex;
@@ -189,8 +196,9 @@ i.fa-solid.fa-list::before {
     color: $colorPrimary;
     font-size: 1.7rem;
 }
+// END INSTRUCTIONS SECTION MOBILE STYLES
 
-//INSTRUCTIONS SECTION TABLET AND DESKTOP STYLING
+// INSTRUCTIONS SECTION TABLET AND DESKTOP STYLES
 @media screen and (min-width: 992px) {
     .instructions {
         justify-content: center;
@@ -237,9 +245,11 @@ i.fa-solid.fa-list::before {
     }
 
 }
-// END INSTRUCTIONS SECTION
+// END INSTRUCTIONS SECTION TABLET AND DESKTOP STYLES
+// END INSTRUCTIONS SECTION STYLES
 
-// RESTAURANTS SECTION
+// RESTAURANTS SECTION STYLES
+// RESTUARANTS SECTION MOBILE STYLES
 .restaurants {
     display: flex;
     flex-flow: column nowrap;
@@ -306,7 +316,7 @@ i.fa-solid.fa-list::before {
             flex-flow: row nowrap;
             justify-content: space-between;
             align-items: center;
-            padding: 1rem;
+            padding: 1rem 1.8rem 1rem 1rem;
         }
 
         &-heading {
@@ -328,8 +338,9 @@ i.fa-solid.fa-list::before {
         }
     }
 }
+// END RESTUARANTS SECTION MOBILE STYLES
 
-//LOCATION SECTION TABLET AND DESKTOP STYLING
+// RESTAURANTS SECTION TABLET AND DESKTOP STYLES
 @media screen and (min-width: 992px) {
     .restaurants {
         flex-flow: row wrap;
@@ -350,4 +361,5 @@ i.fa-solid.fa-list::before {
         }
     }
 }
-// END RESTAURANTS SECTION
+// RESTAURANTS SECTION TABLET AND DESKTOP STYLES
+// END RESTAURANTS SECTION STYLES

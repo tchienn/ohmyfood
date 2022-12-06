@@ -1,5 +1,6 @@
 // This file stores application-wide footer styles
 
+//MOBILE FOOTER STYLES
 .footer {
     display: flex;
     flex-flow: column nowrap;
@@ -35,8 +36,9 @@
         }    
     }
 }
+// END MOBILE FOOTER STYLES
 
-// TABLET AND DESKTOP FOOTER STYLING
+// TABLET AND DESKTOP FOOTER STYLES
 @media screen and (min-width: 768px) {
     .footer {
         display: flex;
@@ -65,3 +67,4 @@
         color: $colorTertiary;        
     }
 }
+// END TABLET AND DESKTOP FOOTER STYLES

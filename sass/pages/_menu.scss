@@ -1,11 +1,12 @@
 // This file stores styles for the menu pages
 
-// Whole page styling
+// GLOBAL STYLES
 body {
     background-color: $colorLightGrey;
 }
+// END GLOBAL STYLES
 
-// Hero image styling
+// HERO STYLES
 .hero {
     position: relative;
     width: 100%;
@@ -17,8 +18,9 @@ body {
         height: 22rem;
     }
 }
+// END HERO STYLES
 
-// Menu styling
+// MENU SECTION MOBILE STYLES
 .menu {
     position: relative; 
     bottom: 2.7rem; // Adjusts menu card position over hero image
@@ -78,13 +80,18 @@ body {
             flex-flow: column nowrap; // Aligns content vertically on left hand side of card
             gap: 0.5rem;
             padding: 1.2rem 0 1.2rem 1.2rem;
-            width: calc(100% - 80px); // Sets an ideal fixed width for card's first flex item by calculating length of total card 
-            // - the gap between flex item 1 and 2 (50px) - the width of flex item 2 (30px) 
+            width: calc(100% - 60px); // Sets an ideal fixed width for card's first flex item by calculating length of total card 
+            // minus the gap between flex item 1 and 2 minus the width of flex item 2
+            transition: 500ms ease-in;
         }
     
         &-right {
             display: flex;
             flex-flow: row nowrap; // Aligns content horizontally on left hand side of card
+            gap: 10px; // Sets gap between flex item 1 (price) & 2 (tick)
+            width: 60px; // Sets fixed width 
+            transform: translateX(20px); // Translates on x-axis by -35px on hover
+            transition: 500ms ease-in-out;
         }
     
         &-heading {
@@ -106,23 +113,25 @@ body {
         }
     
         &-price {
-            margin: 3rem 0.3rem 0 0;
+            padding-top: 3.5rem;
             font-size: 1.2rem;
         }
     
         &:hover {
 
             .menu__card-left {
-                width: calc(100% - 130px) 
+                width: calc(100% - 115px) 
                 // Adjusts width of card's first flex item by calculating length of total card 
-                // - the gap between flex item 1 and 2 (50px) - the width of flex item 2 (30px) 
-                // - the width of the .select icon (50px). This means the description in flex item 1 will 
+                // minus the gap between flex item 1 and 2 minus the width of flex item 2
+                // minus the width of the .select icon. This means the description in flex item 1 will 
                 // be truncated when carscreen is resized 
             }
 
-            .select {
-                margin-right: 0;
-        
+            .menu__card-right {
+                transform: translateX(-35px); // Brings in tick icon
+            }
+
+            .select {        
                 &-icon {
                     
                     &::after {
@@ -134,18 +143,15 @@ body {
     }
 }
 
-// Hover chip animation styling
+// HOVER ANIMATION STYLES
 .select {
-    margin-right: -3rem; // Hides chip element before hover
-    transform: translateX(25%); // Will move green chip to left on hover
-    transition: 500ms ease-in-out; // Determines speed of green chip sliding in on hover
-    
+
     &-icon {
         display: flex;
         flex-flow: row nowrap;
         justify-content: center;
         align-items: center;
-        padding-right: 1rem; // Centers icon
+        padding-right: 0.6rem; // Centers icon
         width: 3.75rem;
         height: 100%;
         background-color: $colorTertiary;
@@ -164,7 +170,9 @@ body {
         }
     }
 }
+// END HOVER ANIMATION STYLES
 
+// BUTTON STYLES
 .menu-btn {
     display: flex;
     flex-flow: row nowrap;
@@ -175,4 +183,8 @@ body {
         @include button($padding: 0.8rem 4rem 0.8rem 4rem);
     }
 }
-// End menu styling
+// END BUTTON STYLES
+// END MENU SECTION MOBILE STYLES
+
+// MENU SECTION TABLET AND DESKTOP STYLES
+// END MENU SECTION TABLET AND DESKTOP STYLES

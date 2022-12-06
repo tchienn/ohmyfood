@@ -481,7 +481,7 @@ i.fa-solid.fa-list::before {
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
+  padding: 1rem 1.8rem 1rem 1rem;
 }
 .restaurants__card-heading {
   margin: 5px 0 0 15px;
@@ -610,11 +610,16 @@ body {
   flex-flow: column nowrap;
   gap: 0.5rem;
   padding: 1.2rem 0 1.2rem 1.2rem;
-  width: calc(100% - 80px);
+  width: calc(100% - 60px);
+  transition: 500ms ease-in;
 }
 .menu__card-right {
   display: flex;
   flex-flow: row nowrap;
+  gap: 10px;
+  width: 60px;
+  transform: translateX(20px);
+  transition: 500ms ease-in-out;
 }
 .menu__card-heading {
   font-size: 1.5rem;
@@ -631,30 +636,25 @@ body {
   overflow: hidden;
 }
 .menu__card-price {
-  margin: 3rem 0.3rem 0 0;
+  padding-top: 3.5rem;
   font-size: 1.2rem;
 }
 .menu__card:hover .menu__card-left {
-  width: calc(100% - 130px);
+  width: calc(100% - 115px);
 }
-.menu__card:hover .select {
-  margin-right: 0;
+.menu__card:hover .menu__card-right {
+  transform: translateX(-35px);
 }
 .menu__card:hover .select-icon::after {
   transform: rotate(360deg);
 }
 
-.select {
-  margin-right: -3rem;
-  transform: translateX(25%);
-  transition: 500ms ease-in-out;
-}
 .select-icon {
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
-  padding-right: 1rem;
+  padding-right: 0.6rem;
   width: 3.75rem;
   height: 100%;
   background-color: #99e2d0;

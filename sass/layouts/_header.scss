@@ -1,7 +1,6 @@
 // This file stores application-wide header styles
 
-// HOME HEADER SECTION STYLING
-// MOBILE STYLING
+// HOME HEADER SECTION STYLES
 .header {
     display: flex;
     flex-flow: row nowrap;
@@ -15,9 +14,10 @@
     }
 
 }
-// END HOME HEADER SECTION STYLING
+// END HOME HEADER SECTION STYLES
 
-// MENU HEADER STYLING
+// MENU HEADER STYLES
+// MENU HEADER MOBILE STYLES
 .header-menu { 
     padding: 1.8rem 10rem 1.3rem 2rem;
     display: flex;
@@ -41,8 +41,9 @@
         height: 2.7rem;
     }
 }
+// END MENU HEADER MOBILE STYLES
 
-// TABLET AND DESKTOP MENU HEADER STYLING
+// MENU HEADER TABLET AND DESKTOP STYLES
 @media screen and (min-width: 768px) {
     .header-menu { 
         justify-content: space-between;
@@ -55,4 +56,4 @@
             
     }
 }
-// END MENU HEADER STYLING
+// END MENU HEADER TABLET AND DESKTOP STYLES

@@ -1,7 +1,7 @@
 /* IMPORTS */
 @import "../normalize.css";
 
-// GLOBAL 
+// GLOBAL STYLES
 *, ::before, ::after {
     margin: 0;
     padding: 0;
@@ -12,6 +12,7 @@ body {
     width: 100%;
     font-family: 'Roboto', sans-serif;
 }
+// END GLOBAL STYLES
 
 // LIKE BUTTON STYLES
 .container--heart {
