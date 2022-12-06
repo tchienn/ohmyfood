@@ -154,7 +154,7 @@ body {
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
-  padding: 1.9rem 0 1.9rem 0;
+  padding: 30px 0 30px 0;
   background-color: #fff;
 }
 .header__logo {
