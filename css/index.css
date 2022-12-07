@@ -169,6 +169,7 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: #fff;
+  gap: 2rem;
 }
 .header-menu a {
   text-decoration: none;
