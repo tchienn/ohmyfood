@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 /* IMPORTS */
 @import "../normalize.css";
-*, ::before, ::after {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -82,7 +82,7 @@ body {
 }
 @keyframes appear {
   0% {
-    transform: translateY(2rem);
+    transform: translateY(10rem);
     opacity: 0;
   }
   25% {
@@ -92,7 +92,6 @@ body {
     opacity: 0.5;
   }
   100% {
-    transform: translateY(0);
     opacity: 1;
   }
 }

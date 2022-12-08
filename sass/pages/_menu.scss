@@ -69,7 +69,7 @@ body {
         animation: appear 1000ms ease-in-out forwards; // Calls 'appear' keyframe animation stored in ../components/_animations. 'forwards' keyword ensures that animation ends when each element reaches 100% opacity
         opacity: 0;
 
-        @for $i from 1 through 10 { // Applies transition incrementally from '1' to '9'
+        @for $i from 1 through 10 { // Applies transition incrementally from '1' to '10'
             &:nth-child(#{$i}) { // '$' defines 'i' as a variable that stands in for elements '1' - '9'
                 animation-delay: calc(#{$i} * 500ms); // Uses calc() function to delay the animation of each element by 0.5 seconds
             }
@@ -165,7 +165,7 @@ body {
             font-size: 1.5rem;
             font-weight: 700;
             font-style: normal; // Normalises icon display
-            transform: rotate(-180deg); // Spins icon
+            transform: rotate(-180deg); // Makes sure that animation requires more turning motion
             transition: 600ms ease-in-out; // Determines speed of icon spinning animation
         }
     }
