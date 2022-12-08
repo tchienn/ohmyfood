@@ -104,11 +104,8 @@
 // EXPLORE SECTION TABLET AND DESKTOP STYLES
 @media screen and (min-width: 992px) {
     .explore {
-        background-image: url("../../assets/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"); // Sets image as background on resize
-    
-        &__heading {
-            color: #fff;
-        }
+        box-shadow: 0 20px 20px 0 $colorTertiary inset;
+        background-color: lighten($colorTertiary, 7);
     
         &__description {
             font-weight: 400;
@@ -215,16 +212,16 @@ i.fa-solid.fa-list::before {
         &__card {
             align-items: center;
             border: none;
-            padding: 1.5rem;
+            padding: 0.5rem;
             height: 15rem;
-            width: 18%;
+            width: 20%;
             box-shadow: none;
         }
     
         &__chip {
             right: 0;
             background-color: transparent;
-            font-size: 2rem;
+            font-size: 1.5rem;
             border-radius: 0;
             color: $colorPrimary;
         }

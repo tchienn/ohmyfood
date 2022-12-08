@@ -289,10 +289,8 @@ body {
 
 @media screen and (min-width: 992px) {
   .explore {
-    background-image: url("../../assets/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
-  }
-  .explore__heading {
-    color: #fff;
+    box-shadow: 0 20px 20px 0 #99e2d0 inset;
+    background-color: #b5eadd;
   }
   .explore__description {
     font-weight: 400;
@@ -398,15 +396,15 @@ i.fa-solid.fa-list::before {
   .instructions__card {
     align-items: center;
     border: none;
-    padding: 1.5rem;
+    padding: 0.5rem;
     height: 15rem;
-    width: 18%;
+    width: 20%;
     box-shadow: none;
   }
   .instructions__chip {
     right: 0;
     background-color: transparent;
-    font-size: 2rem;
+    font-size: 1.5rem;
     border-radius: 0;
     color: #9356dc;
   }
