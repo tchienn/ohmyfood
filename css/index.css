@@ -569,38 +569,47 @@ body {
   border-radius: 1.5rem;
   box-shadow: 0 5px 15px 0 #bfbdbd;
   overflow: hidden;
-  animation: appear 1000ms ease-in-out forwards;
   opacity: 0;
 }
-.menu__card:nth-child(1) {
-  animation-delay: calc(1 * 500ms);
+.menu__card-1 {
+  animation: appear 1000ms ease-in-out forwards;
+  animation-delay: 0s;
 }
-.menu__card:nth-child(2) {
-  animation-delay: calc(2 * 500ms);
+.menu__card-2 {
+  animation: appear 1000ms ease-in-out forwards;
+  animation-delay: 0.5s;
 }
-.menu__card:nth-child(3) {
-  animation-delay: calc(3 * 500ms);
+.menu__card-3 {
+  animation: appear 1000ms ease-in-out forwards;
+  animation-delay: 1s;
 }
-.menu__card:nth-child(4) {
-  animation-delay: calc(4 * 500ms);
+.menu__card-4 {
+  animation: appear 1000ms ease-in-out forwards;
+  animation-delay: 1.5s;
 }
-.menu__card:nth-child(5) {
-  animation-delay: calc(5 * 500ms);
+.menu__card-5 {
+  animation: appear 1000ms ease-in-out forwards;
+  animation-delay: 2s;
 }
-.menu__card:nth-child(6) {
-  animation-delay: calc(6 * 500ms);
+.menu__card-6 {
+  animation: appear 1000ms ease-in-out forwards;
+  animation-delay: 2.5s;
 }
-.menu__card:nth-child(7) {
-  animation-delay: calc(7 * 500ms);
+.menu__card-7 {
+  animation: appear 1000ms ease-in-out forwards;
+  animation-delay: 3s;
 }
-.menu__card:nth-child(8) {
-  animation-delay: calc(8 * 500ms);
+.menu__card-8 {
+  animation: appear 1000ms ease-in-out forwards;
+  animation-delay: 3.5s;
 }
-.menu__card:nth-child(9) {
-  animation-delay: calc(9 * 500ms);
+.menu__card-9 {
+  animation: appear 1000ms ease-in-out forwards;
+  animation-delay: 4s;
 }
-.menu__card:nth-child(10) {
-  animation-delay: calc(10 * 500ms);
+.menu__card-10 {
+  animation: appear 1000ms ease-in-out forwards;
+  animation-delay: 4.5s;
 }
 .menu__card-left {
   display: flex;
