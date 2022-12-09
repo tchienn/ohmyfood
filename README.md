@@ -1,6 +1,6 @@
 # Ohmyfood
 
-A menu selection application. A CSS animation-focused project using SCSS and HTML.
+A menu selection application. A CSS animation-focused project using SCSS and HTML, made as a project for OpenClassrooms Web Development path.
 
 ## For developers
 
