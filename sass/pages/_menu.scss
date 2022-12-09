@@ -71,7 +71,7 @@ body {
         @for $i from 1 through 10 { // Applies transition incrementally from '1' to '10'
             &-#{$i} { // '$' defines 'i' as a variable that stands in for elements '1' - '10'
                 animation: appear 1000ms ease-in-out forwards;
-                animation-delay: ($i - 1) * 500ms; // Ensures there is an incremental delay between the opacity animation of each card 
+                animation-delay: ($i - 1) * 500ms; // Establishes incremental delay between the opacity animation on each card 
             }
         }
     
