@@ -573,43 +573,43 @@ body {
 }
 .menu__card-1 {
   animation: appear 1000ms ease-in-out forwards;
-  animation-delay: 0s;
+  animation-delay: 0ms;
 }
 .menu__card-2 {
   animation: appear 1000ms ease-in-out forwards;
-  animation-delay: 0.5s;
+  animation-delay: 500ms;
 }
 .menu__card-3 {
   animation: appear 1000ms ease-in-out forwards;
-  animation-delay: 1s;
+  animation-delay: 1000ms;
 }
 .menu__card-4 {
   animation: appear 1000ms ease-in-out forwards;
-  animation-delay: 1.5s;
+  animation-delay: 1500ms;
 }
 .menu__card-5 {
   animation: appear 1000ms ease-in-out forwards;
-  animation-delay: 2s;
+  animation-delay: 2000ms;
 }
 .menu__card-6 {
   animation: appear 1000ms ease-in-out forwards;
-  animation-delay: 2.5s;
+  animation-delay: 2500ms;
 }
 .menu__card-7 {
   animation: appear 1000ms ease-in-out forwards;
-  animation-delay: 3s;
+  animation-delay: 3000ms;
 }
 .menu__card-8 {
   animation: appear 1000ms ease-in-out forwards;
-  animation-delay: 3.5s;
+  animation-delay: 3500ms;
 }
 .menu__card-9 {
   animation: appear 1000ms ease-in-out forwards;
-  animation-delay: 4s;
+  animation-delay: 4000ms;
 }
 .menu__card-10 {
   animation: appear 1000ms ease-in-out forwards;
-  animation-delay: 4.5s;
+  animation-delay: 4500ms;
 }
 .menu__card-left {
   display: flex;
