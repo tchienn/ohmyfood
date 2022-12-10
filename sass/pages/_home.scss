@@ -10,20 +10,20 @@
     background-color: #fff; // Sets color of screen behind box animation (blocking out actual site)
     width: 100%; // Ensures loader takes up full width of screen
     height: 100%; // Ensures loader takes up full height of screen
-    animation: loaderBackground 3000ms 1000ms forwards; // Refers to keyframe animation, makes sure the loader preview fades out after three seconds, revealing the site
+    animation: loaderBackground 3000ms 1000ms forwards; // Loader 'fades out' after three seconds, revealing the site
 
     &__border {
-        width: 6rem; // Defines box width
-        height: 6rem; // Defines box height
+        width: 6rem; 
+        height: 6rem; 
         border: 0.2rem solid $colorPrimary;
-        animation: loader 2500ms infinite forwards; // Defines the duration and the transitiion-timing-function of the loader keyframe animation
+        animation: loader 2500ms infinite forwards; 
     
         &-icon {
             position: absolute;           
             bottom: 1.5rem; // Centers font awesome icon inside box
             left: 1.5rem; // Centers font awesome icon inside box
-            font-size: 3rem; // Sets font awesome icon size
-            color: #fff; // Sets font awesome icon colour
+            font-size: 3rem; 
+            color: #fff; 
         }
     }
 
@@ -32,7 +32,7 @@
         display: inline-block; // Allows me to set a width to the contents of the box (icon and background color)
         width: 100%; // Ensures the inner spans 100% of the box
         background-color: $colorPrimary; // Sets colour inside the box
-        animation: loaderInner 2500ms infinite forwards; // Calls to the keyframe animation I made, defining the speed and making sure it loops infinitely while the loading screen is on
+        animation: loaderInner 2500ms infinite forwards;
     }
 }
 // END LOADER SECTION STYLES
@@ -180,14 +180,14 @@
 }
 
 #instructions__card--highlighted {
-    background-color: lighten($colorPrimary, 35); // Function lightens primary colour to highlight third instruction card
+    background-color: lighten($colorPrimary, 35);
 }
 
 i.fa-solid.fa-mobile-screen-button::before, 
 i.fa-solid.fa-list::before {
-    color: darken($colorLightGrey, 40); // Function darkens grey colour otherwise used on site
+    color: darken($colorLightGrey, 40); 
     font-size: 1.7rem;
-} // Sets primary color to icon in third instruction card
+} // Sets primary color to emphasised icon in third instruction card
 
 #instructions__chip--highlighted {
     color: $colorPrimary;
@@ -294,7 +294,7 @@ i.fa-solid.fa-list::before {
                 background-color: $colorTertiary;
                 font-weight: 600;
                 font-size: 1.2rem;
-                color: darken($colorTertiary, 40); // Function darkens tertiary color for "New" label text
+                color: darken($colorTertiary, 40); 
             }
         }
 

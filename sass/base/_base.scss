@@ -17,7 +17,7 @@ body {
 
 // LIKE BUTTON STYLES
 .container--heart {
-    display: grid; // To perfectly stack FA icons over one anither
+    display: grid; // Stack FA heart icons over one another
 }
 
 .fa-heart {
@@ -25,19 +25,19 @@ body {
 }
 
 .heart-black {
-    grid-column: 1; // Aligns first icon (visible black outline)
+    grid-column: 1; 
     grid-row: 1;
 }
 
 .heart.fa-heart {
-    grid-column: 1; // Aligns second icon (that fills with linear gradient on hover)
+    grid-column: 1; 
     grid-row: 1;
-    opacity: 0; // 
-    transition: opacity 400ms; // Specifies transition property and determines duration of transition
-    background: linear-gradient($colorPrimary, $colorSecondary); // The transition changes the background property to a linear gradient
-    -webkit-background-clip: text; // This property trims the background to fit the shape of the text (in this case, the FA icon)
-    -webkit-text-fill-color: transparent; // Sets the fill color of the FA icon to transparent, making way for the gradient
-    font-weight: 900; // Ensures entire icon fills with colour instead of just the outline
+    opacity: 0; 
+    transition: opacity 400ms;
+    background: linear-gradient($colorPrimary, $colorSecondary); 
+    -webkit-background-clip: text; // Trims background to fit the shape of the text
+    -webkit-text-fill-color: transparent; // Sets fill color of FA icon to transparent
+    font-weight: 900; // Displays solid icon rather than outline
 
     &:hover {
         opacity: 1;

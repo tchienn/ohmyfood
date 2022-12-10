@@ -3,18 +3,18 @@
 // LOADER ANIMATION RULES
 @keyframes loaderBackground { 
     100% {
-        opacity: 0; // Ensures that the loader becomes invisible when 100% complete (fades out)
-        z-index: -1;
+        opacity: 0; // Loader becomes transparent when 100% complete 
+        z-index: -1; 
     } 
 } 
 
-@keyframes loader { // Defines the turning animation on the box at different moments
+@keyframes loader { //
     0% {
         transform: rotate(0deg);
     }
 
     25% {
-        transform: rotate(180deg); // Rotates clockwise by 180 degrees between 0 and 25% of the animation run time
+        transform: rotate(180deg); // Rotates box clockwise by 180 degrees between 0 and 25% of the animation run time
     }
 
     50% {
@@ -36,7 +36,7 @@
     }
     
     25% {
-        height: 0%; // Pizza image hidden between 0 and 25% of animation run time
+        height: 0%; // Pizza icon hidden between 0 and 25% of animation run time
     }
     
     50% {
@@ -69,8 +69,7 @@
     }
   
     100% {
-        opacity: 1; // Between 0% and 100% of the animation's runtime, 
-        // the opacity has moved from 0 to 1 incrementally, so we witness a 'fade' effect
+        opacity: 1; // Between 0% and 100% of the animation's runtime the opacity has moved from 0 to 1 incrementally, so we witness a 'fade' effect
     }
   }
 // END MENU ITEM ANIMATION RULES
