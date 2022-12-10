@@ -80,8 +80,7 @@ body {
             flex-flow: column nowrap; // Aligns content vertically on left hand side of card
             gap: 0.5rem;
             padding: 1.2rem 0 1.2rem 1.2rem;
-            width: calc(100% - 60px); // Sets an ideal fixed width for card's first flex item by calculating length of total card 
-            // minus the gap between flex item 1 and 2 minus the width of flex item 2
+            width: calc(100% - 60px); // Sets an ideal fixed width for card's first flex item by calculating length of total card minus the gap between flex item 1 and 2 minus the width of flex item 2
             transition: 500ms ease-in;
         }
     

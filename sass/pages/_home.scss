@@ -60,7 +60,7 @@
     }
 
     &__title {
-        color: #000;
+        color: #212427;
     }
 }
 // END LOCATION SECTION MOBILE STYLES
@@ -86,7 +86,7 @@
 
     &__heading {
         font-size: 2.3rem;
-        color: #000;
+        color: #212427;
     }
 
     &__description {
@@ -268,10 +268,11 @@ i.fa-solid.fa-list::before {
         background-color: #fff;
         box-shadow: 0 5px 15px 0 $colorBoxShadow;
         width: 100%;
+        transition: box-shadow ease-in-out 250ms;
 
         a {
             text-decoration: none;
-            color: #000;
+            color: #212427;
         }
 
         &-img-container {

@@ -11,6 +11,7 @@
 body {
   width: 100%;
   font-family: "Roboto", sans-serif;
+  color: #212427;
 }
 
 .container--heart {
@@ -243,7 +244,7 @@ body {
   font-size: 1.5rem;
 }
 .location__title {
-  color: #000;
+  color: #212427;
 }
 
 @media screen and (min-width: 992px) {
@@ -261,7 +262,7 @@ body {
 }
 .explore__heading {
   font-size: 2.3rem;
-  color: #000;
+  color: #212427;
 }
 .explore__description {
   font-weight: 200;
@@ -279,7 +280,7 @@ body {
   box-shadow: 0 6px 12px 0 #bfbdbd;
   cursor: pointer;
   transform: scale(1);
-  transition: transform 400ms;
+  transition: transform 400ms, box-shadow ease-in-out 250ms;
 }
 .explore__btn:hover {
   filter: brightness(106%);
@@ -307,7 +308,7 @@ body {
     box-shadow: none;
     cursor: pointer;
     transform: scale(1);
-    transition: transform 400ms;
+    transition: transform 400ms, box-shadow ease-in-out 250ms;
   }
   .explore__btn:hover {
     filter: brightness(106%);
@@ -439,10 +440,11 @@ i.fa-solid.fa-list::before {
   background-color: #fff;
   box-shadow: 0 5px 15px 0 #bfbdbd;
   width: 100%;
+  transition: box-shadow ease-in-out 250ms;
 }
 .restaurants__card a {
   text-decoration: none;
-  color: #000;
+  color: #212427;
 }
 .restaurants__card-img-container {
   position: relative;
@@ -695,7 +697,7 @@ body {
   box-shadow: 0 6px 12px 0 #bfbdbd;
   cursor: pointer;
   transform: scale(1);
-  transition: transform 400ms;
+  transition: transform 400ms, box-shadow ease-in-out 250ms;
 }
 .menu-btn-order:hover {
   filter: brightness(106%);
