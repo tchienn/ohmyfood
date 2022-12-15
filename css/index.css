@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 /* IMPORTS */
-@import "../normalize.css";
+@import "https://tchienn.github.io/ohmyfood_menu_app/css/normalize.css";
 * {
   margin: 0;
   padding: 0;
