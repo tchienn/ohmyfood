@@ -4,7 +4,7 @@ I built this menu selection website with HTML and the CSS preprocesser Sass, as 
 
 ## To view the project
 
-To view the project quickly, visit my GitHub website here: tssa017.github.io/ohmyfood_menu_app/
+To view the project quickly, visit my GitHub website here: https://tssa017.github.io/ohmyfood_menu_app/
 
 Otherwise, clone the project
 
